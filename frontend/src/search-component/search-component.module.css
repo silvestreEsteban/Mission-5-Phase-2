@@ -1,0 +1,206 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+}
+
+
+
+.SearchComponent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 247px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #516AE0 55%, #5E8CF4 100%);
+}
+
+.FindYourNewText {
+    width: 926px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    margin-left: 32px;
+}
+
+.FindYourNewText p {
+    color: #F2AFDC;
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    /* 67.5px */
+}
+
+.SearchBar {
+    width: 926px;
+    height: 59px;
+    background: var(--txt-and-bg-box-site-bg-color);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 32px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.SearchBar input {
+    width: 708px;
+    height: 30px;
+    background: var(--txt-and-bg-box-site-bg-color);
+    outline: none;
+    border: none;
+    margin-left: 55px;
+    color: var(--secondary-text-and-icons-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 12px;
+}
+
+.SearchBar button {
+    display: flex;
+    width: 136px;
+    height: 44px;
+    padding: 10px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: var(--ui-button-color-2);
+    color: var(--txt-and-bg-box-site-bg-color);
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+
+.SearchBar button:focus {
+    outline: none;
+    border: none;
+}
+
+#SearchIcon {
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 1011px) {
+    .SearchBar {
+        width: 500px;
+        margin-top: -5px;
+    }
+
+    .SearchBar button {
+        display: flex;
+        width: 86px;
+        height: 44px;
+        padding: 10px 45px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        background-color: var(--ui-button-color-2);
+        color: var(--txt-and-bg-box-site-bg-color);
+        margin-right: 10px;
+        outline: none;
+        border: none;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    .FindYourNewText {
+        width: 500px;
+        height: 168px;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+
+    .SearchComponent {
+        height: 300px;
+    }
+
+    .SearchBar {
+        width: 80%;
+
+    }
+
+    .SearchBar input {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .SearchBar button {
+        width: 20%;
+        padding: 0px;
+    }
+
+    .FindYourNewText {
+        margin-top: 60px;
+        width: 90%;
+    }
+
+    .FindYourNewText p {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 544px) and (min-width: 429px) {
+    .SearchComponent {
+        height: 300px;
+    }
+
+    .SearchBar {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .SearchBar input {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .SearchBar button {
+        width: 20%;
+        padding: 0px;
+    }
+
+    .FindYourNewText {
+        margin-top: 20px;
+        width: 90%;
+    }
+}

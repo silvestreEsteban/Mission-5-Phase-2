@@ -1,0 +1,188 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+}
+
+
+.CategoryContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1315px;
+    height: 70px;
+    background-color: var(--txt-and-bg-box-site-bg-color);
+    margin-left: 62.5px;
+    margin-right: 62.5px;
+    margin-top: -35px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Category {
+    width: 258%;
+    height: 49.803px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.Category:hover {
+    transform: scale(1.1);
+}
+
+#Browse {
+    display: none;
+}
+
+#Marketplace {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--marketplace);
+    margin-left: 12px
+}
+
+#Jobs {
+    background-color: var(--jobs)
+}
+
+#Motors {
+    background-color: var(--motors)
+}
+
+#Property {
+    background-color: var(--property)
+}
+
+#Services {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--services);
+    margin-right: 12px
+}
+
+.HiddenIcon {
+    display: none;
+}
+
+
+@media screen and (max-width: 428px) {
+    .CategoryContainer {
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-radius: 0;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .Category {
+        width: 190px;
+        height: 38px;
+        border-radius: 2px;
+        border: 1px solid #D7D5D2;
+        background-color: #FFF;
+        font-size: 14px;
+        justify-content: flex-start;
+
+    }
+
+    .Category p {
+        margin-left: 10px;
+
+    }
+
+
+
+    #Browse {
+        color: var(--brand-secondary-hyperlink);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 2px;
+        margin-top: 10px;
+        margin-right: 6px;
+    }
+
+    #Marketplace {
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        color: var(--marketplace);
+        margin-left: 2px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+
+    #Jobs {
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        color: var(--jobs);
+        margin-left: 2px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+
+    #Motors {
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        color: var(--motors);
+        margin-left: 2px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+
+    #Property {
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        color: var(--property);
+        margin-left: 2px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+
+    #Services {
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        color: var(--services);
+        margin-left: 8px;
+        margin-top: 10px;
+        border-radius: 2px;
+
+
+    }
+
+    .Category:hover {
+        transform: scale(1);
+    }
+
+    .HiddenIcon {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .HiddenIconBrowse {
+        margin-left: 80px;
+    }
+}
