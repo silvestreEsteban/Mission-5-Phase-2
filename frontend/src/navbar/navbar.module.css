@@ -112,7 +112,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 428px) {
     .NavbarTopDiv {
         display: none;
     }
@@ -150,5 +150,82 @@
         position: absolute;
         top: 0;
         z-index: 100;
+    }
+}
+
+@media screen and (max-width: 1011px) {
+    .TopContainerLeft {
+        height: 24px;
+        width: 445px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: var(--secondary-text-and-icons-color);
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .TopContainerLeft p,
+    .TopContainerRight p {
+        margin-left: 10px;
+
+    }
+
+    .TopContainerRight {
+        height: 24px;
+        width: 157px;
+        margin-right: 24px;
+        color: var(--secondary-text-and-icons-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .BottomContainerRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 400px;
+        height: 30px;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .BottomContainerLeft {
+        width: 331px;
+        height: 41px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 32px;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 544px) {
+    .NavbarTopDiv {
+        display: none;
+    }
+
+    .NavbarBottomDiv p {
+        display: none;
+    }
+
+    #DropdownIcon {
+        display: block;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+
+    .BottomContainerRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
     }
 }
