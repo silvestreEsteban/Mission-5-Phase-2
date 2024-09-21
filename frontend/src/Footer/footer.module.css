@@ -177,12 +177,11 @@
     justify-content: space-between; 
     margin-right: 1.5vw;
 }
-
-.DarkModeIcon2{display: none;}
-
-.DarkModeIcon1,
+.DarkModeIcon,
 .FacebookIcon,
 .TwitterIcon {margin-right: 1vw;}
+
+.DarkModeIcon2 {display: none;}
     
 }
 .MobileLinks{
@@ -245,7 +244,7 @@
 .MobileLinks{ order:5;}
 .MobileLinks p{order:5;}
 
-.DarkModeIcon1{display: none;}
+.DarkModeIcon{display: none;}
 
     .FootContainer{
         max-width: 100vw;

@@ -1,5 +1,6 @@
 import Navbar from "../navbar/navbar"
-import ComparisonComponent from "./ComparisonComponent"
+import CompareListing from "./ParsedComparison"
+import ListingDetails from "./GetComparison"
 import Footer from "../Footer/footer"
 
 
@@ -8,7 +9,8 @@ const comparisonPage = () => {
     <>
     <div>
         <Navbar />
-        <ComparisonComponent />
+        <CompareListing />
+        <ListingDetails />Honestly It's here
         <Footer />
     </div>
     </>

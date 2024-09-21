@@ -1,6 +1,6 @@
 import './App.css'
 import Homepage from './homepage/homepage'
-import ComparisonPage from './ComparisonPage/comparisonPage'
+
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
      <div className='layout-main-page'>
       <Homepage />
-      <ComparisonPage />
+      
      </div>
 
        </>
