@@ -1,0 +1,96 @@
+.firstLink
+{
+   background-color: #6A6DD4;
+margin: 71px;
+    height: 223px;
+    width:448px;
+    color: white;
+    padding-left: 10px;
+}
+.firstImg{
+    position: absolute;
+    padding-left: 221px;
+    height:223px;
+    width: 227px;
+}
+.textDiv1
+{
+   height: 0px;
+    width: 100px;
+}
+.button1{
+    color: #6A6DD4;
+    background-color: #d788af;
+    border-radius: 4px;
+
+   
+}
+.outerLink{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.secondLink
+{
+   background-color: #FC0D86;
+margin: 71px;
+    height: 223px;
+    width:448px;
+    color: white;
+    padding-left: 10px;
+}
+.textDiv2
+{
+   height: 0px;
+    width: 100px;
+}
+.secondImg{
+    position: absolute;
+    padding-left: 221px;
+    height:223px;
+    width: 227px;
+}
+.button2{
+    color: magenta;
+    border-radius: 5px;
+background: #FFF;
+   
+}
+
+
+.thirdLink
+{
+   background-color: #FC0D86;
+margin: 71px;
+    height: 223px;
+    width:448px;
+    color: white;
+    padding-left: 10px;
+}
+.textDiv3
+{
+   height: 0px;
+    width: 100px;
+}
+.thirdImg{
+    position: absolute;
+    padding-left: 221px;
+    height:223px;
+    width: 227px;
+}
+.button3{
+    background-color: #FFEB33;
+    border-radius: 4px;
+}
+  
+@media screen and (max-width: 428px) {
+    .outerLink {
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-radius: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }}
