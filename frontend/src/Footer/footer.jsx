@@ -85,8 +85,11 @@ const Footer = () => {
         <div className={myStyles.FinalFootIcons}>
         <div className={myStyles.FinalFootTradeMe2}>
           <p>© Trade Me Limited</p>
+          <div className={myStyles.DarkModeIcon1}>
+          <img src="shielded-logo 1.png" alt="Dark mode" />
+          </div>
         </div>
-            <div className={myStyles.DarkModeIcon}><p>© Trade Me Limited</p>
+            <div className={myStyles.DarkModeIcon2}><p>© Trade Me Limited</p>
           <img src="shielded-logo 1.png" alt="Dark mode" />
           </div>
           <div className={myStyles.FacebookIcon}>

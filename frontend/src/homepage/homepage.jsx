@@ -9,7 +9,7 @@ const Homepage = () => {
         <>
         <Navbar />
         <SearchComponent />
-        {/* <CategoryComponent /> */}
+        <CategoryComponent />
 
         <Footer />
         </>
