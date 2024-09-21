@@ -32,7 +32,18 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
 }
+
+.NavbarTopDiv a {
+    text-decoration: none;
+    color: var(--secondary-text-and-icons-color);
+}
+
+.NavbarTopDiv a:hover {
+    text-decoration: underline;
+}
+
 
 .TopContainerLeft {
     height: 24px;
@@ -67,6 +78,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: Helvetica, sans-serif;
 }
 
 .BottomContainerRight {
@@ -94,10 +106,12 @@
 
 #NavTradeMeLogo {
     height: 100%;
+    width: 40%;
 }
 
 #Browse {
     cursor: pointer;
+    display: none;
 }
 
 #WatchlistIcon {
@@ -112,7 +126,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 430px) {
     .NavbarTopDiv {
         display: none;
     }
@@ -150,6 +164,7 @@
         position: absolute;
         top: 0;
         z-index: 100;
+        border-bottom: 1px solid #D7D5D2;
     }
 }
 

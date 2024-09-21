@@ -2,8 +2,9 @@
 
 import { Command } from "commander";
 import Listing from "../model.js";
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 import inquirer from "inquirer";
+import axios from "axios";
 import {
   addListing,
   updateListing,
@@ -78,17 +79,34 @@ program
     });
   });
 
+const updateQuestions = [
+  {
+    type: "input",
+    name: "price",
+    message: "Enter the new price of the listing",
+  },
+];
 program
   .command("update <id>")
   .alias("u")
   .description("Update a listings price for bidding purposes")
-  .action((id, options) => {
-    const { price } = options;
-    if (price) {
-      updatePriceInDatabase(id, price);
-    } else {
-      console.log("No price provided for update.");
-    }
+  .action((id) => {
+    prompt(updateQuestions).then((answers) => {
+      axios
+        .post("http://localhost:4000/api/updateBiddingPrice", {
+          id: id,
+          newPrice: answers.price,
+        })
+        .then((response) => {
+          console.log("Listing updated successfully:", response.data);
+        })
+        .catch((error) => {
+          console.error(
+            "Error updating listing:",
+            error.response ? error.response.data : error.message
+          );
+        });
+    });
   });
 
 program

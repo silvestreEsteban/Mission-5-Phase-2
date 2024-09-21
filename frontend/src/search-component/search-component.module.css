@@ -148,10 +148,11 @@
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 430px) {
 
     .SearchComponent {
         height: 300px;
+        width: 100%;
     }
 
     .SearchBar {
@@ -179,7 +180,7 @@
     }
 }
 
-@media screen and (max-width: 544px) and (min-width: 429px) {
+@media screen and (max-width: 544px) and (min-width: 431px) {
     .SearchComponent {
         height: 300px;
     }
