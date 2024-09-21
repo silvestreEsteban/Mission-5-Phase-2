@@ -5,22 +5,15 @@ import myStyles from "./footer.module.css";
 const Footer = () => {
   return (
     <>
+    <div className={myStyles.NoGood}></div>
     <div className={myStyles.FootContainer}>
       <div className={myStyles.AboveLine}>
-        <link to="" />
-        <svg
-          width="84"
-          height="37"
-          viewBox="0 0 84 37"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="84" height="37" fill="#006EBD" />
-          New
-        </svg>
+        <div className={myStyles.NewSpace}>
+        <link to="" /><p>New</p>
+        </div>
         <p>Welcome to the new-look Trade Me</p>
+        <div className={myStyles.InfoFeedback}>
         <link to="" />
-        <img src="" alt="" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
@@ -49,26 +42,16 @@ const Footer = () => {
           />
         </svg>
         Tell us what you think
+        </div>
       </div>
 
       <div className={myStyles.LineBreak}></div>
-      {/* <div className={myStyles.UserAccLinks}>
-        <link to="" />
-        <p>List an item</p>
-        <link to="" />
-        <p>Watchlist</p>
-        <link to="" />
-        <p>Favourites</p>
-        <link to="" />
-        <p>My Trade Me</p>
-        <link to="" />
-        <p>Log out</p>
-      </div> */}
+
       <div>
         <The6Div />
       </div>
       <div className={myStyles.FinalFootLinks}>
-        <div className={myStyles.FinalFootTradeMe}>
+        <div className={myStyles.FinalFootTradeMe1}>
           <p>© Trade Me Limited</p>
         </div>
         <div className={myStyles.FinalFootExtraLinks}>
@@ -87,8 +70,23 @@ const Footer = () => {
           <link to="" />
           <p>Contact us</p>
         </div>
+        <div className={myStyles.FinalFootExtraLinks2}>
+          <link to="" />
+          <p>Desktop site</p>
+          <link to="" />
+          <p>Help</p>
+          <link to="" />
+          <p>Contact us</p>
+          <link to="" />
+          <p>Terms & Conditions</p>
+          <link to="" />
+          <p>About us</p>
+        </div>
         <div className={myStyles.FinalFootIcons}>
-            <div className={myStyles.DarkModeIcon}>
+        <div className={myStyles.FinalFootTradeMe2}>
+          <p>© Trade Me Limited</p>
+        </div>
+            <div className={myStyles.DarkModeIcon}><p>© Trade Me Limited</p>
           <img src="shielded-logo 1.png" alt="Dark mode" />
           </div>
           <div className={myStyles.FacebookIcon}>
@@ -123,6 +121,10 @@ const Footer = () => {
             </svg>
           </a></div>
         </div>
+      </div>
+      <div className={myStyles.MobileLinks}>
+        <link to="" /><p>Register</p>
+        <link to="" /><p>Log in</p>
       </div>
       </div>
     </>
