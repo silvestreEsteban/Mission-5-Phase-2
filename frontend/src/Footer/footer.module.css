@@ -33,6 +33,7 @@
     height: 50vh;
     margin-bottom: 3vw;
     padding-bottom: 1vh;
+    position:relative;
 }
 .FinalFootTradeMe2 {display: none;}
 .AboveLine {

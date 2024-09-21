@@ -1,58 +1,50 @@
-import {useState , useEffect } from "react"
-import CompareListing from "./ParsedComparison";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import myStyles from "./GetComparison.module.css";
 
-import myStyles from "./ComparisonComponent.module.css"
+const GetComparison = () => {
+  const [listings, setListings] = useState([]);
 
+  useEffect(() => {
+    const fetchListings = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/api/listing");
+        setListings(response.data);
+      } catch (error) {
+        console.error("Error Finding Listings:", error);
+      }
+    };
+    fetchListings();
+  }, []);
 
-const ListingDetails = () => {
-    const [toCompare, setToCompare] = useState(null); // this will hold the object
-
-    useEffect(() => {
-        const fetchToCompare = async () => {
-            try {
-                const response = await fetch("http://localhost:3000/api/listings");
-                const data = await response.json();
-                setToCompare(data);
-            } catch (error) {
-                console.error("Error Fetching Details:", error);
-            }
-        };
-
-        fetchToCompare(); 
-    }, []);
-
-    if (!toCompare) {
-        return <p>Loading...</p>; 
-    }
+  // const reserveMet = bid >= {price};
 
 
-//need to destructure the data from the object
-const { image, title, location, condition, size, price, colour, dimensions } = toCompare;
-// if we run the reserve price event trigger I thin this will work v v v v
-// const reserveMet = bid >= {price};
-
-return (
+  return (
     <>
-    <div className={myStyles.imageWindow1}>
-    <CompareListing listing={{ image, title}} />
-        <img src={image} alt={title} />
-    </div>
-    <div className={myStyles.Details}>
-    <CompareListing listing={{ title, location, price }} />
-        <h2>{title}</h2>
-        <p>Location: {location}</p>
-        <p>Current Bid: $ {price}</p>   {/* {startingPrice} maybe? */}
-        {/* <p>{ reserveMet ? "Reserve Met" : "Reserve Not Met"}</p> */}
-    </div>
-    <div className={myStyles.Description}>
-    <CompareListing listing={{ condition, size, colour, dimensions }} />
-        <p>Condition: {condition}</p>
-        <p>Size: {size}</p>
-        <p>Colour: {colour}</p>
-        <p>Dimensions: {dimensions}</p>
-    </div>
+      <div>
+        {listings.map((listing) => (
+          <div key={listing._id} className={myStyles.listing}>
+            <div className={myStyles.ImageSpace}>
+              <img src={listing.image} alt={listing.title} />
+            </div>
+            <div className={myStyles.Details}>
+              <h2>{listing.title}</h2>
+              <p>Location: {listing.location}</p>
+              <p>Current Bid: $ {listing.price}</p> {/* {startingPrice} maybe? */}
+              {/* <p>{ reserveMet ? "Reserve Met" : "Reserve Not Met"}</p> */}
+            </div>
+            <div className={myStyles.Description}>
+              <p>Condition: {listing.condition}</p>
+              <p>Size: {listing.size}</p>
+              <p>Colour: {listing.colour}</p>
+              <p>Dimensions: {listing.dimensions}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
-)}
+  );
+};
 
-
-export default ListingDetails;
+export default GetComparison;

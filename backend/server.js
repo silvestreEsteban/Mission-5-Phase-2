@@ -6,10 +6,14 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT
+const PORT = 3000
+const mongoURI = "mongodb://localhost:27017/tradeMeMockData";
 
-mongoose.connect(process.env.MONGODB_URI)
-.then(() => console.log("MongoDB Connect"))
+console.log("Mongo Uri", mongoURI)
+
+
+mongoose.connect(mongoURI)
+.then(() => console.log("MongoDB Connected"))
 .catch(err => console.error(err));
 
 app.use(cors());
@@ -28,9 +32,9 @@ const schema = new mongoose.Schema({
 
   const Listing = mongoose.model("Listing", schema);
 
-  app.get("/api/listings", async (req, res) => {
+  app.get("/api/listing", async (req, res) => {
     try {
-        constlistings = Listings.find();
+        const listings = await Listing.find();
         res.status(200).json(listings);
     }catch (error) {
         res.status(500).json({message: "Error getting listings", error});
@@ -38,5 +42,5 @@ const schema = new mongoose.Schema({
   });
 
 app.listen(PORT, () => {
-    console.log("Server running at http://localhost:${PORT}")
+    console.log(`Server running at http://localhost:${PORT}`)
 });
