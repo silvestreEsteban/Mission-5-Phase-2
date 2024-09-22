@@ -31,9 +31,10 @@
     max-width: 1440px;
     width: 100vw;
     height: 50vh;
-    margin-bottom: 3vw;
+    margin-bottom: 1vh;   /* Change this in yours */
     padding-bottom: 1vh;
     position:relative;
+    font-family: Helvetica;
 }
 .FinalFootTradeMe2 {display: none;}
 .AboveLine {
