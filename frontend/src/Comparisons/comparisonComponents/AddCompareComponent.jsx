@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Modal from "../modal/AddCompare.modal";
-// import myStyles from "./"
+import myStyles from "./"
 
 const AddCompare = () => {
   const [listing, setListing] = useState(null);
