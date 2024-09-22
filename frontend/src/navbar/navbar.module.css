@@ -34,6 +34,7 @@
     justify-content: space-between;
     font-size: 16px;
     font-family: Helvetica, sans-serif;
+    margin-top: -10px;
 }
 
 .NavbarTopDiv a {

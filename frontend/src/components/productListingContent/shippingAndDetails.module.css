@@ -1,0 +1,121 @@
+.detailsAndShipping {
+    width: 649px;
+    height: 160px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--secondary-text-and-icons-color);
+    font-family: Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+
+
+.ProductDetails {
+    width: 45%;
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ProductDetails span h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%
+}
+
+.ProductDetails span {
+    width: 109px;
+}
+
+.ProductDetails span p {
+    margin-top: -20px
+}
+
+.ShippingDetails {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ShippingDetails span {
+    margin-top: 5px;
+}
+
+.HeaderContainer {
+    height: 30px;
+    width: 529px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 71px;
+    margin-left: 55px;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--header-text-color);
+}
+
+.GreenText {
+    color: var(--property);
+    display: flex;
+    align-items: center;
+}
+
+.ShippingHeader {
+    margin-right: 25px;
+}
+
+.DetailsHeader {
+    margin-left: 5px;
+}
+
+#UserDescription {
+    color: var(--header-text-color);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    height: 30px;
+    width: 117px;
+    margin-left: 55px;
+    margin-top: 41px;
+}
+
+#UserDescriptionParagraph {
+    width: 649px;
+    height: 108px;
+    color: var(--secondary-text-and-icons-color);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+    margin-left: 55px;
+    margin-top: 13px;
+
+}
+
+#SeeMore {
+    margin-left: 55px;
+    color: var(--brand-secondary-hyperlink);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%
+}
+
+#SeeMore:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

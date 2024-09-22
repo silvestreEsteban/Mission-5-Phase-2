@@ -22,12 +22,19 @@
     --services: #555;
 }
 
+* button {
+    cursor: pointer;
+}
+
+
 .ProductParentDiv {
     width: 100%;
     max-width: 1440px;
+    height: 1900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 
 }
 
@@ -51,7 +58,7 @@
 }
 
 .MainCarouselImage {
-    width: 800px;
+    width: 95.6%;
     height: 500px;
     margin-left: 35px;
     border: 1px solid black;
@@ -93,7 +100,6 @@
     width: 480px;
     height: 911px;
     flex-shrink: 0;
-    border: 2px solid black;
     margin-top: 51px;
 
 }
@@ -120,8 +126,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-
 }
 
 .ProductDetails span h4 {
@@ -178,4 +182,47 @@
 
 .DetailsHeader {
     margin-left: 5px;
+}
+
+
+#UserDescription {
+    color: var(--header-text-color);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    height: 30px;
+    width: 117px;
+    margin-left: 55px;
+    margin-top: 41px;
+}
+
+#UserDescriptionParagraph {
+    width: 649px;
+    height: 108px;
+    color: var(--secondary-text-and-icons-color);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+    margin-left: 55px;
+    margin-top: 13px;
+
+}
+
+#SeeMore {
+    margin-left: 55px;
+    color: var(--brand-secondary-hyperlink);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%
+}
+
+#SeeMore:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
