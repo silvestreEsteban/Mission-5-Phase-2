@@ -1,0 +1,52 @@
+.redNavbar {
+    width: 100%;
+    max-width: 1440px;
+    height: 57px;
+    flex-shrink: 0;
+    background-color: #D93A3F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redNavbarLeftContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redNavbarRightContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redNavbarLeftContainer p {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 223%;
+    height: 36px;
+    margin-left: 35px;
+}
+
+.redNavbarRightContainer p {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 223%;
+    height: 36px;
+    margin-right: 35px;
+}
+
+@media screen and (max-width: 430px) {
+    .redNavbar {
+        display: none;
+    }
+}
