@@ -1,6 +1,7 @@
-
 import styles from './navbar.module.css';
 import tradeMeLogo from '../images/trade-me-logo 1.png';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
     return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         
             <div className={styles.NavbarTopDiv}>
                 <div className={styles.TopContainerLeft}>
-                    <p>Trade Me</p> {/*  This is to be linked to the homepage */}
+                  <Link to="/"><p id={styles.TradeMeP}>Trade Me</p></Link>
                     <p>Trade Me Insurance</p>
                     <p>Holiday Houses</p>
                     <p>FindSomeone</p>
@@ -22,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className={styles.NavbarBottomDiv}>
                 <div className={styles.BottomContainerLeft}>
-                    <img src={tradeMeLogo} id={styles.NavTradeMeLogo} alt='trade-me-logo'></img> {/*  This is to be linked to the homepage */}
+                <Link to="/"><img src={tradeMeLogo} id={styles.NavTradeMeLogo} alt='trade-me-logo'></img></Link>
                     <p id={styles.Browse}>Browse<svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 46 36" fill="none">
 <path d="M40.25 7.5L5.74996 7.50001C5.40066 7.50086 5.05828 7.57626 4.75966 7.71807C4.46105 7.85989 4.2175 8.06275 4.05525 8.30483C3.893 8.54691 3.81818 8.81905 3.83885 9.09193C3.85951 9.36481 3.97489 9.62812 4.17254 9.85351L21.4225 29.3535C22.1375 30.162 23.8586 30.162 24.5755 29.3535L41.8255 9.8535C42.0251 9.62859 42.1422 9.36515 42.164 9.09181C42.1858 8.81847 42.1115 8.54568 41.9491 8.30309C41.7867 8.0605 41.5424 7.85737 41.2429 7.71579C40.9433 7.5742 40.5999 7.49957 40.25 7.5Z" fill="#76716D"/>
 </svg></p>
@@ -55,7 +56,7 @@ const Navbar = () => {
 </svg></span>
                 </div>
         </div>
-        
+       
         </>
     )
 }

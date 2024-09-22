@@ -1,18 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from '../src/navbar/navbar'; 
 import Homepage from '../src/homepage/homepage';
-// import Watchlist from './Watchlist';
-import ComparisonPage from '../src/ComparisonPage/comparrisonPage';
+import ComparisonPage from "../src/comparisons/ComparisonPage/";
+// import ProductListing from '../src/pages/productListing/productListing';
+import '../src/App.css';
 
 function Routing() {
     return (
         <Router>
-            <Navbar /> 
             <Routes>
-                <Route path="/homepage" element={<Homepage />} />
                 {/* <Route path="/watchlist" element={<Watchlist />} /> */}
-                <Route path="/comparissonPage" element={<ComparisonPage />} />
+                <Route path="/ComparisonPage" element={<ComparisonPage />} />
                 <Route path="/" element={<Homepage />} /> {/* Default route */}
+                {/* <Route path="/productListing" element={<ProductListing />} /> */}
             </Routes>
         </Router>
     );

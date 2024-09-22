@@ -34,7 +34,7 @@ const schema = new mongoose.Schema({
 
   app.get("/api/listing", async (req, res) => {
     try {
-        const listings = await Listing.find();
+        const listings = await Listing.find().limit(1);
         res.status(200).json(listings);
     }catch (error) {
         res.status(500).json({message: "Error getting listings", error});
