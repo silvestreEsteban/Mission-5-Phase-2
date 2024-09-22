@@ -1,4 +1,4 @@
-import myStyles from "./GetComparison.module.css"
+import myStyles from "./GetComparisonComponent.module.css"
 
 const IntroSpace = () => {
   return (

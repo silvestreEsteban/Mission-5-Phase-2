@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import WatchListBinoculars from "./svgLinks/svgLinks";
-import myStyles from "./GetComparison.module.css";
+// import WatchListBinoculars from "../svgLinks/svgLinks";
+import myStyles from "./GetComparisonComponent.module.css";
 
 const GetComparison = () => {
   const [listings, setListings] = useState([]);

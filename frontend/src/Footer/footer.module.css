@@ -24,13 +24,13 @@
     --community: #007ACD;
     --Hyperlink: #007ACD;
 }
-@media  (min-width:430px) {
+@media  (min-width:4px) {
     
 .FootContainer{
     /* position: fixed; */
     max-width: 1440px;
     width: 100vw;
-    height: 50vh;
+    height: 488px;
     margin-bottom: 1vh;   /* Change this in yours */
     padding-bottom: 1vh;
     position:relative;

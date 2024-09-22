@@ -1,8 +1,10 @@
 import Navbar from "../navbar/navbar";
 import RedNavbar from "../components/redNavbar/RedNavbar";
-import IntroSpace from "./IntroSpace";
-import GetComparison from "./GetComparison";
+import IntroSpace from "./comparisonComponents/IntroSpace";
+import GetComparison from "./comparisonComponents/GetComparisonComponent";
+import AddCompare from "./comparisonComponents/AddCompareComponent";
 import Footer from "../Footer/footer";
+import myStyles from "./Comparison.module.css"
 
 
 
@@ -14,7 +16,11 @@ const ComparisonPage = () => {
         <RedNavbar />
         <IntroSpace />
         <GetComparison />
-        <Footer />
+        <AddCompare />
+        <div className={myStyles.ToSetFooter}
+        ><Footer />
+        </div>
+        
     </div>
     </>
   )
