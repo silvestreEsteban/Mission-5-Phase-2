@@ -27,6 +27,7 @@
 .NavbarTopDiv {
     height: 82px;
     background-color: var(--txt-and-bg-box-bg-color);
+    max-width: 1440px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,6 +71,7 @@
     height: 71px;
     background-color: var(--txt-and-bg-box-site-bg-color);
     width: 100%;
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;

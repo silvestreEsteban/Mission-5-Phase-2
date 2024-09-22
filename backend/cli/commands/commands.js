@@ -87,8 +87,8 @@ const updateQuestions = [
   },
 ];
 program
-  .command("update <id>")
-  .alias("u")
+  .command("updatePrice <id>")
+  .alias("up")
   .description("Update a listings price for bidding purposes")
   .action((id) => {
     prompt(updateQuestions).then((answers) => {
@@ -106,6 +106,23 @@ program
             error.response ? error.response.data : error.message
           );
         });
+    });
+  });
+
+program
+  .command("update <id>")
+  .alias("u")
+  .description("Update a listing")
+  .option("-t, --title <title>", "Title of the listing")
+  .option("-l, --location <location>", "Location of the listing")
+  .option("-c, --condition <condition>", "Condition of the listing")
+  .option("-s, --size <size>", "Size of the listing")
+  .option("-p, --price <price>", "Price of the listing")
+  .option("-co, --colour <colour>", "Colour of the listing")
+  .option("-d, --dimensions <dimensions>", "Dimensions of the listing")
+  .action((id) => {
+    prompt(questions).then((answers) => {
+      updateListing(id, answers);
     });
   });
 

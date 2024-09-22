@@ -1,5 +1,6 @@
 .redNavbar {
     width: 100%;
+    max-width: 1440px;
     height: 57px;
     flex-shrink: 0;
     background-color: #D93A3F;
