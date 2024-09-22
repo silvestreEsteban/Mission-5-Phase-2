@@ -31,8 +31,8 @@
     max-width: 1440px;
     width: 100vw;
     height: 488px;
-    margin-bottom: 1vh;   /* Change this in yours */
-    padding-bottom: 1vh;
+    margin-bottom: 0vh;   /* Change this in yours */
+    padding-bottom: 0vh;
     position:relative;
     font-family: Helvetica;
 }
@@ -157,8 +157,9 @@
     color: var( --secondary-text-and-icons-color);
     justify-content: space-between;
     font-size: 16px;
-    /* margin-top: 21.4vh; */
-    margin-bottom: 1vh;
+    padding-top: 1.5vh;
+    margin-top: 18vh;
+    margin-bottom: 0vh;
     padding-bottom: 2vh;
 }
 .FinalFootExtraLinks2{display: none;}

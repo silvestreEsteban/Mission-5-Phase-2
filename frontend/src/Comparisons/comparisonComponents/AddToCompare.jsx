@@ -1,9 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import Modal from "../modal/AddCompare.modal";
-import myStyles from "./"
+import myStyles from "./AddToCompare.module.css"
 
-const AddCompare = () => {
+
+
+const AddToCompare = () => {
   const [listing, setListing] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -14,14 +16,20 @@ const AddCompare = () => {
       setListing(response.data);
     } catch (error) {
       console.error("Error Finding Listings:", error);
+      console.log("Fetched Listing:", setListing.response.data);
+
     }
   }; 
+  
 
   return ( 
     <>
-      <button onClick={() => setIsModalOpen(true)}>Add listing to Compare</button>
+      <div className={myStyles.EmptyListingSpace}>
+        <div className={myStyles.BeforeLoadImageSpace}><img src="bi_image-fill.svg" alt="" /></div>
+        <div className={myStyles.AddListing}>
+      <h3 onClick={() => setIsModalOpen(true)}>+ Add a listing to Compare</h3></div>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleFetchListing} />
-
+      </div>
       {listing && (
         <div className={myStyles.EmptyListing}>
           <div className={myStyles.EmptyImageSpace}>
@@ -105,4 +113,4 @@ const AddCompare = () => {
   );
 };
 
-export default AddCompare;
+export default AddToCompare;

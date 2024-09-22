@@ -34,7 +34,7 @@ const schema = new mongoose.Schema({
 
   app.get("/api/listing", async (req, res) => {
     try {
-        const listings = await Listing.find().limit(4);
+        const listings = await Listing.find().limit(1);
         res.status(200).json(listings);
     }catch (error) {
         res.status(500).json({message: "Error getting listings", error});
@@ -43,4 +43,16 @@ const schema = new mongoose.Schema({
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`)
+});
+
+app.get("/api/listing/:id", async (req, res) => {
+  try {
+    const listing = await Listing.findById(req.params.id);
+    if (!listing) {
+      return res.status(404).json({ message: "Listing not found" });
+    }
+    res.status(200).json(listing);
+  } catch (error) {
+    res.status(500).json({ message: "Error finding listing", error });
+  }
 });
