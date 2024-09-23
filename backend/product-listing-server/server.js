@@ -101,6 +101,22 @@ app.post("/api/updateBiddingPrice", (req, res) => {
     });
 });
 
+const User = mongoose.model("User", {
+  username: String,
+  location: String,
+  feedback: Number,
+});
+
+app.get("/api/userInfo", (req, res) => {
+  User.find().then((results) => {
+    console.log(
+      "Fetched the data from the User collection in your local MongoDB instance",
+      results
+    );
+    res.json(results);
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
 });

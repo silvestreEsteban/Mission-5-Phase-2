@@ -1,7 +1,28 @@
 import styles from './shippingAndDetails.module.css';
 import { shippingSVG, pickupSVG, paymentSVG, seeMoreSVG } from './productListingSVG';
-
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 export default function ShippingAndDetails() {
+const [condition, setCondition] = useState('');
+const [color, setColor] = useState('');
+const [type, setType] = useState('');
+const [dimensions, setDimensions] = useState('');
+
+    const fetchListingInfo = async () => {
+        try {
+            const response = await axios.get("http://localhost:4000/api/listingInfo");
+            setCondition(response.data[0].condition);
+            setColor(response.data[0].colour);
+            setType(response.data[0].size);
+            setDimensions(response.data[0].dimensions);
+        } catch (error) {
+            console.log("There was an error fetching listing info", error);
+        }
+    }
+    useEffect(() => {
+        fetchListingInfo();
+    }, []);
+
 return (
     <>
        <div className={styles.HeaderContainer}>
@@ -11,16 +32,16 @@ return (
             <div className={styles.detailsAndShipping}>
                 <div className={styles.ProductDetails}>
                     <span><h4>Condition:</h4>
-                    <p>Used</p>{/* <p>{condition}</p> */}</span>
+                    <p>{condition}</p></span>
                     
                     <span><h4>Color:</h4>
-                    <p>Blue</p>{/* <p>{condition}</p> */}</span>
+                    <p>{color}</p></span>
                     
                     <span><h4>Type:</h4>
-                    <p>2-seater</p>{/* <p>{condition}</p> */}</span>
+                    <p>{type}</p></span>
                    
                     <span><h4>Dimensions:</h4>
-                    <p>160 x 56 cm</p>{/* <p>{condition}</p> */}</span>
+                    <p>{dimensions}</p></span>
                     </div>
                     <div className={styles.ShippingDetails}>
                     <span><p>{shippingSVG()} Shipping unavailable, buyer must pick up</p></span>

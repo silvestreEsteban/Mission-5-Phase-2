@@ -2,7 +2,16 @@
     width: 95.6%;
     height: 500px;
     margin-left: 35px;
-    border: 1px solid black;
+}
+
+.MainCarouselImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.SubImage img {
+    width: 100%;
+    height: 100%;
 }
 
 .BelowMainCarouselImage {
@@ -25,7 +34,6 @@
     width: 600px;
     height: 120px;
     margin-left: 35px;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     margin-top: 21px;
@@ -34,5 +42,87 @@
 .SubImage {
     width: 188px;
     height: 120px;
-    border: 1px solid purple;
+}
+
+#CarouselLeftArrow {
+    width: 64.241px;
+    height: 57.471px;
+    flex-shrink: 0;
+    border-radius: 10px 0px 0px 10px;
+    background: rgba(68, 65, 61, 0.45);
+    position: absolute;
+    left: 42px;
+    top: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CarouselRightArrow {
+    width: 64.241px;
+    height: 57.471px;
+    flex-shrink: 0;
+    border-radius: 10px 0px 0px 10px;
+    background: rgba(68, 65, 61, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -274px;
+    left: 736px;
+}
+
+@media screen and (max-width: 431px) {
+    .MainCarouselImage {
+        width: 430px;
+        height: 267px;
+        margin-left: 128px;
+    }
+
+    .BelowMainCarouselImage {
+        width: 430px;
+        height: 26px;
+        margin-left: 128px;
+        margin-top: 0px;
+    }
+
+    .CarouselSubImages {
+        width: 430px;
+        height: 120px;
+        margin-left: 128px;
+        margin-top: 21px;
+    }
+
+    .SubImage {
+        width: 130px;
+        height: 120px;
+    }
+
+    #CarouselLeftArrow {
+        width: 64.241px;
+        height: 57.471px;
+        flex-shrink: 0;
+        border-radius: 10px 0px 0px 10px;
+        background: rgba(68, 65, 61, 0.45);
+        position: absolute;
+        left: 0px;
+        top: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #CarouselRightArrow {
+        width: 64.241px;
+        height: 57.471px;
+        flex-shrink: 0;
+        border-radius: 10px 0px 0px 10px;
+        background: rgba(68, 65, 61, 0.45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -145px;
+        left: 366px;
+    }
 }

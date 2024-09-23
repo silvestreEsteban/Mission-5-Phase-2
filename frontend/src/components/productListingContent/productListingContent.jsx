@@ -10,7 +10,7 @@ export default function ProductListingContent() {
         <>
         <div className={styles.ProductParentDiv}>
             <div className={styles.LeftSide}>
-            <p className={styles.TopPageLinks}><Link to="/">Home</Link> / Marketplace / Category / Sub-Category</p>
+            <p className={styles.TopPageLinks}><Link to="/">Home</Link> / Marketplace / Home & living / Lounge, dining & hall / Lounge suites / Sofa beds</p>
             <Carousel />
             <ShippingAndDetails />
             <QAndA />

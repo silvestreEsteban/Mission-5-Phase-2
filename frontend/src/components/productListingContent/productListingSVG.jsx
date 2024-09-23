@@ -80,4 +80,53 @@ const seeMoreSVG = () => {
   )
 }
 
-export {shippingSVG, pickupSVG, paymentSVG, userIconSVG, starIconSVG, auctionSVG, clockSVG, infoSVG, seeMoreSVG }
+const yellowIconSVG = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+  <circle cx="15.5" cy="15.5" r="15.5" fill="#FFE8AC"/>
+</svg>
+  )
+}
+
+const greyIconSVG = () => {
+  return (
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+  <circle cx="15.5" cy="15.5" r="15.5" fill="#D3D8E2"/>
+</svg>
+  )
+}
+
+const pinkIconSVG = () => {
+  return (
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 54 53" fill="none">
+<circle cx="27" cy="26.5" r="26.5" fill="#FFC7C2"/>
+</svg>
+  )
+}
+
+const rightPolygonSVG = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+  <path d="M12 8L0.75 15.7942L0.750001 0.205771L12 8Z" fill="#F6F5F4"/>
+</svg>
+  )
+}
+
+const leftPolygonSVG = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+  <path d="M3.93402e-07 8L11.25 15.7942L11.25 0.205771L3.93402e-07 8Z" fill="#F6F5F4"/>
+</svg>
+  )
+}
+
+const warningSVG = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+  <path d="M1.70831 35.875L20.5 3.41663L39.2916 35.875H1.70831ZM20.5 30.75C20.984 30.75 21.39 30.586 21.718 30.258C22.046 29.93 22.2095 29.5245 22.2083 29.0416C22.2072 28.5587 22.0432 28.1533 21.7163 27.8253C21.3895 27.4973 20.984 27.3333 20.5 27.3333C20.016 27.3333 19.6105 27.4973 19.2836 27.8253C18.9568 28.1533 18.7928 28.5587 18.7916 29.0416C18.7905 29.5245 18.9545 29.9305 19.2836 30.2597C19.6128 30.5888 20.0182 30.7522 20.5 30.75ZM18.7916 25.625H22.2083V17.0833H18.7916V25.625Z" fill="#F9AF2C"/>
+</svg>
+  )
+}
+
+
+export { shippingSVG, pickupSVG, paymentSVG, userIconSVG, starIconSVG, auctionSVG, clockSVG, infoSVG, seeMoreSVG, yellowIconSVG, greyIconSVG, pinkIconSVG, rightPolygonSVG, leftPolygonSVG, warningSVG }
