@@ -44,18 +44,22 @@ const GetComparison = () => {
               <div className={myStyles.OuterDesc}>
                 <div className={myStyles.Description}>
                   <div className={myStyles.DescInfo}>
+                    <div className={myStyles.SizeCond}>
                     <p>
                       <strong>Condition</strong>: {listing.condition}
                     </p>
                     <p>
                       <strong>Size</strong>: {listing.size}
                     </p>
+                    </div>
+                    <div className={myStyles.DimeCol}>
                     <p>
                       <strong>Colour</strong>: {listing.colour}
                     </p>
                     <p>
                       <strong>Dimensions</strong>: {listing.dimensions}
                     </p>
+                    </div>
                   </div>
                 </div>
                 <div className={myStyles.shipAndPay}>
@@ -79,7 +83,7 @@ const GetComparison = () => {
                     <svg
                       width="30"
                       height="20"
-                      viewBox="0 0 30 43"
+                      viewBox="0 0 60 43"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >

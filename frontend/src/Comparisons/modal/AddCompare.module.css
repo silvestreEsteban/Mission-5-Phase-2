@@ -1,6 +1,4 @@
-potential modal css structure
 .modal-overlay {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -13,8 +11,32 @@ potential modal css structure
   
 .modalContent {
   background: #f6f5f4;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
-  width: 300px;
+  width: 200px;
+  height: auto;
   padding-top: 25%;
+}
+@media (max-width:430px){
+  .modal-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .modalContent {
+    background: #f6f5f4;
+    padding-left: 40px;
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+    padding-top: 25%;
+  }
+  
 }

@@ -24,6 +24,7 @@ const AddToCompare = () => {
 
   return ( 
     <>
+    
       <div className={myStyles.EmptyListingSpace}>
         <div className={myStyles.BeforeLoadImageSpace}><img src="bi_image-fill.svg" alt="" /></div>
         <div className={myStyles.AddListing}>
@@ -31,32 +32,39 @@ const AddToCompare = () => {
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleFetchListing} />
       </div>
       {listing && (
+        <div className={myStyles.EmptyPageContainer}>
         <div className={myStyles.EmptyListing}>
           <div className={myStyles.EmptyImageSpace}>
             <img src={listing.image} alt={listing.title} />
           </div>
           <div className={myStyles.EmptyDetails}>
+          <div className={myStyles.EmptyInfo}>
             <h2>{listing.title}</h2>
             <p>Location: {listing.location}</p>
             <p className={myStyles.EmptyListingPrice}>Current Bid</p>
             <h2>${listing.price}</h2>
             <p>Reserve met / No reserve</p>
           </div>
+          </div>
           <div className={myStyles.EmptyOuterDesc}>
             <div className={myStyles.EmptyDescription}>
               <div className={myStyles.EmptyDescInfo}>
-                <p>
-                  <strong>Condition</strong>: {listing.condition}
-                </p>
-                <p>
-                  <strong>Size</strong>: {listing.size}
-                </p>
-                <p>
-                  <strong>Colour</strong>: {listing.colour}
-                </p>
-                <p>
-                  <strong>Dimensions</strong>: {listing.dimensions}
-                </p>
+              <div className={myStyles.EmptySizeCond}>
+                    <p>
+                      <strong>Condition</strong>: {listing.condition}
+                    </p>
+                    <p>
+                      <strong>Size</strong>: {listing.size}
+                    </p>
+                    </div>
+                    <div className={myStyles.EmptyDimeCol}>
+                    <p>
+                      <strong>Colour</strong>: {listing.colour}
+                    </p>
+                    <p>
+                      <strong>Dimensions</strong>: {listing.dimensions}
+                    </p>
+                    </div>
               </div>
             </div>
             <div className={myStyles.EmptyShipAndPay}>
@@ -79,7 +87,7 @@ const AddToCompare = () => {
                 <svg
                   width="30"
                   height="20"
-                  viewBox="0 0 30 43"
+                  viewBox="0 0 43 43"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -90,7 +98,7 @@ const AddToCompare = () => {
                 </svg>
                 Pick up available {listing.location}
               </p>
-              <p className={myStyles.EmptyPayment}>
+              <p className={myStyles.EmptyPayment }>
                 <svg
                   width="40"
                   height="30"
@@ -107,6 +115,7 @@ const AddToCompare = () => {
               </p>
             </div>
           </div>
+        </div>
         </div>
       )}
     </>
