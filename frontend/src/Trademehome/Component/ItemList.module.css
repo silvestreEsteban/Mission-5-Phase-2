@@ -1,0 +1,102 @@
+.cardImage {
+    width: 327px;
+    height:163px;
+}
+
+.watchList{
+    z-index: 99999;
+    position: absolute;
+    transform: translateX(275px) translateY(-27px);
+}
+.location{
+    font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+.Card
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* row-gap: 10px; */
+    width: 332px;
+    height:331px;
+    /* margin: 20px; */
+    background-color:  #fffae5;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #f9af2c;
+    border-radius: 1%;
+
+    @media screen and (max-width: 912px) and (min-width:430px){
+    
+            width: 100%;
+            margin: 0;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-radius: 0;
+            align-items: center;
+            justify-content: space-evenly;
+            display: inline-block;
+            font-size: 20px;
+            text-align: center;
+        }
+}
+.itemDetails{
+    width: 286px;
+    height: 148px;
+}
+.textAllign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ /* padding-left: 2%; */
+}
+.itemTitle{
+    margin: 1% 0% 1% 0;
+    font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 223%;
+}
+.shipping{
+    margin: 1% 0px 1% 0;
+   color: #29A754;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.closes{
+    color: #76716D;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.reserveText{
+    margin: 3% 0% 1% 0;
+    color:  #76716D;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.dollerOne{
+    color: #44413D;
+
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 223%; 
+}
+
+  
