@@ -1,0 +1,9 @@
+
+.layout{
+   display: flex;
+   justify-content:space-around
+}
+  
+@media screen and (max-width: 428px) {
+   
+} 
