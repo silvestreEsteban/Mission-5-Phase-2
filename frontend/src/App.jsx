@@ -12,10 +12,10 @@ function App() {
     <>
      <div className='layout-main-page'>
       <Homepage />
-<LinkImage/>
-<CategoryInfo/>
- 
-<DollerReserv/>
+      <LinkImage/>
+      <CategoryInfo/>
+      
+      <DollerReserv/>
 
 
      </div>

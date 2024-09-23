@@ -38,7 +38,10 @@ font-weight: 700;
 line-height: 150%;
  
 }
-
+.dollarReserveComponent{
+    /* width: 100%; */
+    max-width: 1440px;
+}
   
 @media screen and (max-width: 428px) {
     .reserv {

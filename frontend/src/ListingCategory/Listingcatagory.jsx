@@ -1,5 +1,5 @@
 
-import styles from './ListingCatagory.module.css'
+
 
 function Listingcatagory() {
   return (

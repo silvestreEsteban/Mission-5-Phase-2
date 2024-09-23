@@ -57,7 +57,8 @@ height: 60px;
 .outerLink{
     display: flex;
     justify-content: space-between;
-    gap: 2%;
+    margin-top: 2%;
+    max-width: 1440px;
 }
 
 
