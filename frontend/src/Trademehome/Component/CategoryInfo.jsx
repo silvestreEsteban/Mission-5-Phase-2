@@ -5,36 +5,28 @@ export default function CategoryInfo() {
     <div className={styles.outer}>
       <div>
         <div>
-          <div>Trending</div>
-          <br />
-          <div>Categories</div>
+          <div className={styles.trending}>Trending</div>
+          <div className={styles.categories}>Categories</div>
         </div>
-        <br />
 
         <div className={styles.cataCardOuter}>
           <div className={styles.category1}>
-            <br />
 
-            <div>60,3144+ Dresses</div>
-            <br />
-            <div>Marketplace / Clothing & Fashion / Women / Dresses</div>
+            <div className={styles.dresses}>60,3144+ Dresses</div>
+            <div className={ styles.market1}>Marketplace / Clothing & Fashion / Women / Dresses</div>
           </div>
 
           <div className={styles.category2}>
-            <br />
 
-            <div>6,043+ Handbags</div>
-            <br />
-            <div>
+            <div className={styles.handbags}>6,043+ Handbags</div>
+            <div className={styles.market2}>
               Marketplace /Clothing & Fashion /Women /Bags & handbags /Handbags
             </div>
           </div>
 
           <div className={styles.category3}>
-            <br />
-            <div>117+ Concerts</div>
-            <br />
-            <div>
+            <div className={styles.concerts}>117+ Concerts</div>
+            <div className={styles.market3}>
               Marketplace /Travel, events & activities /Event tickets /Concerts
             </div>
           </div>

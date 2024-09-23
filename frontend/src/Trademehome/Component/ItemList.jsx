@@ -13,13 +13,13 @@ export default function ItemList({ item }) {
       <div className={styles.itemDetails}>
        
         <div className={styles.textAllign}>
-          <div>{item.location}</div>
-          <div>closes:</div>
+          <div className={styles.location}>{item.location}</div>
+          <div className={styles.closes}>closes:</div>
         </div>
         <div className={styles.itemTitle}>{item.title}</div>
         <div className={styles.shipping}>Free shipping</div>
         <div className={styles.reserveText}>No reserve</div>
-        <div>$1.00</div>
+        <div className={styles.dollerOne}>$1.00</div>
       </div>
     </div>
     </div>

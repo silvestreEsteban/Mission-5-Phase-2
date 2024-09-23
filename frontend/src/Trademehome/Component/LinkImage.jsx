@@ -5,25 +5,21 @@ export default function LinkImage() {
     <div className={styles.outerLink}>
       <div className={styles.firstLink}>
         <div className={styles.textDiv1}>
-          <br />
-          <div>Property</div>
-          <br />
-          <div>Open Endless</div>
-          <div>Doors</div>
-          <br />
+          <div className={styles.property}>Property</div>
+          <div className={styles.open}>Open Endless Doors</div>
           <button className={styles.button1}>Search now</button>
         </div>
-
+        <div>
         <img className={styles.firstImg} src="./Image/linkimg1.png " alt="" />
+
+        </div>
       </div>
 
       <div className={styles.secondLink}>
         <div className={styles.textDiv2}>
-          <br />
-          <div>Featured</div>
-          <br />
-          <div>Rare Antiques & Collectibles</div>
-          <br />
+         
+          <div className={styles.featured}>Featured</div>
+          <div className={styles.rare}>Rare Antiques & Collectibles</div>
           <button className={styles.button2}>Explore now</button>
         </div>
 
@@ -32,11 +28,8 @@ export default function LinkImage() {
 
       <div className={styles.thirdLink}>
         <div className={styles.textDiv3}>
-          <br />
-          <div>Trending</div>
-          <br />
-          <h> Shop top preloved brands!</h>
-          <br />
+          <div className={styles.trending}>Trending</div>
+          <div className={styles.shop}> Shop top pre-loved brands!</div>
           <button className={styles.button3}>Shop now</button>
         </div>
         <img className={styles.thirdImg} src="./Image/linkimg3.png " alt="" />

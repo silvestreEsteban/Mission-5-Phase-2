@@ -8,6 +8,13 @@
     position: absolute;
     transform: translateX(295px) translateY(-8px);
 }
+.location{
+    font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
 .Card
 {
     display: flex;
@@ -50,13 +57,46 @@
 }
 .itemTitle{
     margin: 1% 0% 1% 0;
+    font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 223%;
 }
 .shipping{
     margin: 1% 0px 1% 0;
-    color: #29a754;
+   color: #29A754;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.closes{
+    color: #76716D;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 .reserveText{
     margin: 3% 0% 1% 0;
+    color:  #76716D;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.dollerOne{
+    color: #44413D;
+
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 223%; 
 }
 
   
