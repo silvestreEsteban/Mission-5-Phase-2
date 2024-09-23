@@ -1,3 +1,28 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+}
+
+
 .MainCarouselImage {
     width: 95.6%;
     height: 500px;
@@ -17,7 +42,7 @@
 .BelowMainCarouselImage {
     width: 802px;
     height: 26px;
-    margin-left: 35px;
+    margin-left: 33px;
     background-color: var(--brand-primary-color1);
     display: flex;
     justify-content: center;
@@ -48,10 +73,10 @@
     width: 64.241px;
     height: 57.471px;
     flex-shrink: 0;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px 10px 10px 0px;
     background: rgba(68, 65, 61, 0.45);
     position: absolute;
-    left: 42px;
+    left: 43px;
     top: 500px;
     display: flex;
     align-items: center;
@@ -69,7 +94,7 @@
     justify-content: center;
     position: relative;
     top: -274px;
-    left: 736px;
+    left: 733px;
 }
 
 @media screen and (max-width: 431px) {
