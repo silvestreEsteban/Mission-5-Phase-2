@@ -1,0 +1,183 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+}
+
+
+#QAndA {
+    width: 526px;
+    height: 547px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Column1,
+#Column2,
+#Column3,
+#Column4,
+#Column5 {
+    width: 100%;
+    height: 15%;
+
+}
+
+#Column1,
+#Column3,
+#Column5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#Column2,
+#Column4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#Buttons {
+    width: 526px;
+    height: 47px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+#Button1,
+#Button2 {
+    width: 50%;
+    height: 47px;
+    border: none;
+    outline: none;
+    background-color: var(--txt-and-bg-box-site-bg-color);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+#Button1 {
+    color: var(--brand-secondary-hyperlink);
+    border-bottom: 1px solid var(--brand-secondary-hyperlink);
+}
+
+#Button2 {
+    color: var(--header-text-color);
+    border-bottom: 1px solid var(--txt-and-bg-box-bg-color);
+}
+
+#AskAQuestion {
+
+    width: 40%;
+    height: 47px;
+    border: none;
+    outline: none;
+    background-color: var(--txt-and-bg-box-site-bg-color);
+    text-align: center;
+    margin-top: 10px;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    background-color: var(--ui-button-color-2);
+    border-radius: 5px;
+    color: var(--txt-and-bg-box-site-bg-color);
+}
+
+.TextBox {
+    height: 36px;
+    width: 300px;
+    background-color: var(--txt-and-bg-box-bg-color);
+    margin-left: -2px;
+    margin-right: -2px;
+    color: var(--secondary-text-and-icons-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+
+}
+
+#C {
+    color: #EE9637;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 9px;
+    margin-top: -28px;
+}
+
+.pickleRick {
+    width: 15px;
+}
+
+#pickle1 {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 6px;
+}
+
+#pickle2 {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 6px;
+}
+
+#N {
+    color: #7D7EA1;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 9px;
+    margin-top: -28px;
+
+}
+
+#N2 {
+    color: #7D7EA1;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 9px;
+    margin-top: -28px;
+}

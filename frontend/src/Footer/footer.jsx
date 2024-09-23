@@ -138,6 +138,7 @@ const Footer = () => {
           <p>Log in</p>
         </div>
       </div>
+      
     </>
   );
 };

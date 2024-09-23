@@ -2,6 +2,7 @@
 
 import { Command } from "commander";
 import Listing from "../model.js";
+import User from "../seed/userModel.js";
 import mongoose, { mongo } from "mongoose";
 import inquirer from "inquirer";
 import axios from "axios";
@@ -143,5 +144,26 @@ program
   .alias("sc")
   .description("Seed the carousel database")
   .action(addCarouselSeedData);
+
+// user data seeding
+
+const userInfo = [
+  {
+    username: "rick_557",
+    feedback: 100,
+    location: "Orewa, Auckland",
+  },
+];
+
+program
+  .command("seedUser")
+  .alias("su")
+  .description("Seed the user database")
+  .action(() => {
+    User.insertMany(userInfo).then(() => {
+      console.log("User seed data added successfully");
+      mongoose.connection.close();
+    });
+  });
 
 program.parse(process.argv);
