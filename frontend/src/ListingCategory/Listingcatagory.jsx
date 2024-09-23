@@ -1,10 +1,16 @@
+import ComparisonPopUp from "./ComparisonPopup";
+import SearchBar from "./SearchBar";
 
 
 
-function Listingcatagory() {
+function ListingCatagory() {
+  
   return (
-    <div>Listingcatagory</div>
+    <div>
+      <SearchBar/>
+<ComparisonPopUp/>
+    </div>
   )
 }
 
-export default Listingcatagory
+export default ListingCatagory;
