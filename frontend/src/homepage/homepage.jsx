@@ -5,10 +5,13 @@ import DollerReserv from '../Trademehome/Component/DollerReserv'
 import LinkImage from '../Trademehome/Component/LinkImage'
 // import ComparisonPage from "../Comparisons/ComparisonPage";
 import Footer from "../Footer/footer";
+import '../App.css';
+import styles from '../components/productListingContent/productListing.module.css';
 
 const Homepage = () => {
     return (
         <>
+        <div className="layout-main-page">
         <Navbar />
         <SearchComponent />
 
@@ -19,7 +22,10 @@ const Homepage = () => {
         <DollerReserv/>
 
         {/* <ComparisonPage /> */}
+        <div className={styles.ToSetFooter}>
         <Footer />
+        </div>
+        </div>
         </>
     )
 }

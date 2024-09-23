@@ -22,87 +22,6 @@
     --services: #555;
 }
 
-* button {
-    cursor: pointer;
-}
-
-
-.ProductParentDiv {
-    width: 100%;
-    max-width: 1440px;
-    height: 1900px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-
-}
-
-.TopPageLinks {
-    height: 24px;
-    width: 334px;
-    margin-left: 35px;
-    margin-top: 21px;
-    color: var(--secondary-text-and-icons-color);
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-.TopPageLinks a {
-    color: var(--secondary-text-and-icons-color);
-    text-decoration: none;
-}
-
-.TopPageLinks a:hover {
-    text-decoration: underline;
-}
-
-.MainCarouselImage {
-    width: 95.6%;
-    height: 500px;
-    margin-left: 35px;
-    border: 1px solid black;
-}
-
-.BelowMainCarouselImage {
-    width: 802px;
-    height: 26px;
-    margin-left: 35px;
-    background-color: var(--brand-primary-color1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-}
-
-.CarouselSubImages {
-    width: 600px;
-    height: 120px;
-    margin-left: 35px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 21px;
-}
-
-.SubImage {
-    width: 188px;
-    height: 120px;
-    border: 1px solid purple;
-}
-
-.RightSide {
-    width: 480px;
-    height: 911px;
-    flex-shrink: 0;
-    margin-top: 51px;
-
-}
 
 .detailsAndShipping {
     width: 649px;
@@ -184,7 +103,6 @@
     margin-left: 5px;
 }
 
-
 #UserDescription {
     color: var(--header-text-color);
     font-family: Helvetica;
@@ -228,17 +146,34 @@
 }
 
 @media screen and (max-width: 431px) {
-    .ProductParentDiv {
-        flex-direction: column;
-        align-items: center;
-        width: 431px;
+    .detailsAndShipping {
+        width: 430px;
+        max-width: 430px;
+        height: 160px;
+        margin-left: 135px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: var(--secondary-text-and-icons-color);
+        font-family: Helvetica, sans-serif;
+        margin-top: 20px;
     }
 
-    .TopPageLinks {
-        width: 400px;
-        margin-left: 150px;
-        margin-top: 80px;
-        height: 50px;
+    .ProductDetails {
+        width: 180px;
+        height: 100%;
+        border-right: 1px solid #d9d9d9;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
+
+    #UserDescription {
+        width: 430px;
+        max-width: 430px;
+
+    }
+
 
 }
