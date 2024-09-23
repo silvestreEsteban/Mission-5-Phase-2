@@ -7,6 +7,7 @@ const [condition, setCondition] = useState('');
 const [color, setColor] = useState('');
 const [type, setType] = useState('');
 const [dimensions, setDimensions] = useState('');
+const [location, setLocation] = useState('');
 
     const fetchListingInfo = async () => {
         try {
@@ -15,6 +16,8 @@ const [dimensions, setDimensions] = useState('');
             setColor(response.data[0].colour);
             setType(response.data[0].size);
             setDimensions(response.data[0].dimensions);
+            setLocation(response.data[0].location);
+
         } catch (error) {
             console.log("There was an error fetching listing info", error);
         }
@@ -45,7 +48,7 @@ return (
                     </div>
                     <div className={styles.ShippingDetails}>
                     <span><p>{shippingSVG()} Shipping unavailable, buyer must pick up</p></span>
-                    <span className={styles.GreenText}>{pickupSVG()}<p> Pick up in</p></span>
+                    <span className={styles.GreenText}>{pickupSVG()}<p> Pick up in {location}</p></span>
                     <span className={styles.GreenText}>{paymentSVG()}<p> Cash, NZ Bank Deposit</p></span>
                 </div>
                 </div>

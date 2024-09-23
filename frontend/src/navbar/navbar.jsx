@@ -17,8 +17,7 @@ const Navbar = () => {
                     <p>homes.co.nz</p>
                 </div>
                 <div className={styles.TopContainerRight}>
-                    <p>Register</p>
-                    <p>Log in</p>
+                    <p>Log Out</p>
                 </div>
             </div>
             <div className={styles.NavbarBottomDiv}>

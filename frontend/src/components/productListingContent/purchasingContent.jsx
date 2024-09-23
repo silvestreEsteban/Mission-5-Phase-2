@@ -16,6 +16,11 @@ const [biddingBoxId, setBiddingBoxId] = useState('BiddingProcessHiddenDiv');
 const [bidAmount, setBidAmount] = useState('');
 const [itemId, setItemId] = useState('');
 const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+const [beenOutbid, setBeenOutbid] = useState({
+    id: 'BeenOutbid',
+    message: 'You have been outbid'
+});
+
 
 const handleCheckBoxChange = (e) => {
     setIsCheckboxChecked(e.target.checked);
@@ -101,7 +106,7 @@ const handleUpdatePrice = () => {
                 <div className={styles.Auction}>
                     <h2>{auctionSVG()} Auction</h2>
                     <h2 id={styles.TimeHeader}>{clockSVG()} 05:06:20</h2>
-                    <h3>You have been outbid</h3>
+                    <h3 id={styles[beenOutbid.id]}>{beenOutbid.message}</h3>
                     <span id={styles.BiddingPriceSpan}><h1>${price}</h1><h4>NZD<span id={styles.infoSVG}>{infoSVG()}</span></h4></span>
                     <p>Highest Bid</p>
                     <button onClick={handleBiddingProcess}>Place a bid</button>
@@ -137,6 +142,7 @@ const handleUpdatePrice = () => {
             if (isCheckboxChecked) {
                 handleUpdatePrice(itemId, bidAmount);
                 setBiddingBoxId('BiddingProcessHiddenDiv');
+                setBeenOutbid({ id: 'LeadingTheBid', message: 'Congratulations! You lead the bid'})
             } else {
                 alert('Please check the box before confirming your bid');
             }
