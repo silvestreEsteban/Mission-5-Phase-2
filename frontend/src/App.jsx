@@ -9,6 +9,7 @@ import LinkImage from './Trademehome/Component/LinkImage'
 function App() {
 
   return (
+    <>
      <div className='layout-main-page'>
       <Homepage />
 <LinkImage/>
@@ -18,7 +19,10 @@ function App() {
 
 
      </div>
+
+       </>
   )
 }
 
 export default App
+

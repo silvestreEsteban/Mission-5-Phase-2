@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1440px;
     height: 247px;
     flex-shrink: 0;
     background: linear-gradient(90deg, #516AE0 55%, #5E8CF4 100%);
@@ -148,10 +149,11 @@
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 430px) {
 
     .SearchComponent {
         height: 300px;
+        width: 100%;
     }
 
     .SearchBar {
@@ -179,7 +181,7 @@
     }
 }
 
-@media screen and (max-width: 544px) and (min-width: 429px) {
+@media screen and (max-width: 544px) and (min-width: 431px) {
     .SearchComponent {
         height: 300px;
     }

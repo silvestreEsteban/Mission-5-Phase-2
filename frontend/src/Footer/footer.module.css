@@ -1,0 +1,345 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+
+    --community: #007ACD;
+    --Hyperlink: #007ACD;
+}
+@media  (min-width:430px) {
+    
+.FootContainer{
+    /* position: fixed; */
+    max-width: 1440px;
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 3vw;
+    padding-bottom: 1vh;
+    position:relative;
+}
+.FinalFootTradeMe2 {display: none;}
+.AboveLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: var( --Hyperlink);
+    /* margin-left: 1vw; */
+}
+
+.AboveLine p {
+    color: var(--secondary-text-and-icons-color);
+    margin-left: -261px;
+}
+.AboveLine svg {
+    margin-left: 2vw;
+}
+.NewSpace {
+    margin-left: -261px;
+    width: 84px;
+    height: 37px;
+    background-image: url("/NewBtn.jpg");
+}
+
+.InfoFeedback {
+    margin-left: -8vw;
+    color: var(---secondary-text-and-icons-color);
+}
+
+.LineBreak {
+    background: var(--brand-primary-color1);
+    max-width: 1440px;
+    width: 100vw;
+    height: 10px;
+    flex-shrink: 0;
+    margin-bottom: 2vh;
+}
+
+.UserAccLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+}
+.UserAccLinks p {
+    color: var(--secondary-text-and-icons-color);
+}
+
+
+/* The6Div */
+.The6DivContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1380px;
+    width: 90vw;
+    height: 180px;
+    flex-shrink: 0;
+    padding-bottom: 1vh;
+    margin-left: 2vw;
+}
+
+/* Title backgrounds */
+.TitleMarketPlace {
+    margin-top: 82px;
+    position: relative;
+    color: var(--marketplace);
+}
+
+.TitleJobs {
+    color: var(--jobs);
+}
+
+.TitleMotors {
+    color: var(--motors);
+}
+
+.TitleProperty {
+    color: var(--property);
+}
+
+.TitleServices {
+    color: var(--services);
+}
+
+.TitleCommunity {
+    color: var(--community);
+}
+
+/* Lists */
+.MarketPlace,
+.Jobs,
+.Motors,
+.Property,
+.Services,
+.Community {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-text-icons, #76716D);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+
+}
+
+.FinalFootLinks {
+    margin-top: 16vh;
+    height: auto;
+    background-color: var(--txt-and-bg-box-bg-color);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: var( --secondary-text-and-icons-color);
+    justify-content: space-between;
+    font-size: 16px;
+    /* margin-top: 21.4vh; */
+    margin-bottom: 1vh;
+    padding-bottom: 2vh;
+}
+.FinalFootExtraLinks2{display: none;}
+.FinalFootTradeMe1 {
+    margin-left: 1.7vw;
+}
+.FinalFootExtraLinks {
+    display: flex;
+    flex-direction: row;
+}
+.FinalFootExtraLinks p {
+    margin-left: 1vw;
+    
+}
+.FinalFootIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-right: 1.5vw;
+}
+.DarkModeIcon,
+.FacebookIcon,
+.TwitterIcon {margin-right: 1vw;}
+
+.DarkModeIcon2 {display: none;}
+    
+}
+.MobileLinks{
+    display: none;
+}
+@media (max-width: 1172px){
+    .NewSpace{display: none;}
+}
+@media (max-width: 1040px) {
+    .AboveLine{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .AboveLine p {margin-left: 2vw;
+    }
+    .InfoFeedback{margin-left: 1.2vw;}
+    
+    .The6DivContainer{
+        display: none;
+    }
+   .FinalFootLinks {
+    display: flex;
+    flex-direction: column;
+   } 
+
+
+   .FinalFootTradeMe1{order: 2;}
+   .FinalFootExtraLinks {order: 1}   
+   .FinalFootIcons {order: 2;}
+   
+}
+
+@media (max-width:804px){
+    .FootContainer{
+        font-size: 12px;
+    }
+}
+@media (max-width:430px){
+    /* .NoGood {        
+        width: 430px;
+        height: 200px;
+        margin-bottom: 1vw;
+        background-image: url("FailSafeForDisplay.jpg");
+    }
+    .FootContainer{ display: none;}
+} */
+
+/* ************ Order Change ********************** */
+.AboveLine{order: 0;}
+.LineBreak{order: 0;}
+.NewSpace p{ order:1;}
+.InfoFeedback{ order: 1;}
+.FinalFootExtraLinks2{ order: 2;}
+.FinalFootIcons{ order:4;}
+.FinalFootTradeMe2 p{ order: 3;}
+.FacebookIcon{order: 4;}
+.TwitterIcon{order: 4;}
+.DarkModeIcon img{ order: 4;}
+.MobileLinks{ order:5;}
+.MobileLinks p{order:5;}
+
+.DarkModeIcon{display: none;}
+
+    .FootContainer{
+        max-width: 100vw;
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        justify-content: center; 
+    }
+
+    .FootContainer p {
+        font-size: 12px;
+    }
+    
+    .FinalFootExtraLinks{
+        display: none;
+    }
+
+    .AboveLine p{  
+        margin-top: 15%;      
+        max-width: 100vw;
+        height: 17px;
+    }
+    
+    .InfoFeedback{
+        height: 30px;
+    }
+    .LineBreak{
+        height: 8px;
+        margin-bottom: -15vh;
+    }
+    
+    .FinalFootLinks{
+        align-items: center;
+        height: 100px;
+        background-color: var(--txt-and-bg-box-site-bg-color);
+    }    
+    
+    .FinalFootTradeMe1 {
+        display: none;
+    }
+
+    .FinalFootTradeMe2 p {
+        color: var(--secondary-text-icons, #76716D);
+        font-size: 12px;
+    }
+
+    .FinalFootExtraLinks2{
+        margin-top: 1vw;
+        display: flex;
+        flex-direction: row;
+        width: 415px;
+        height: 20px;
+        justify-content: space-evenly;
+        font-size: 12px;
+        margin-bottom: -1vh
+    }
+    
+    .FinalFootIcons{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .FinalFootIcons svg {
+        height: 21px;
+    }
+
+
+    .DarkModeIcon2 {
+        margin-left: -20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .DarkModeIcon2 img{
+        margin-left: 40px;
+        height: 20px;
+    }   
+   
+
+
+    .MobileLinks{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        margin-top: -3vh;
+        margin-bottom: -60vh;
+    }
+    .MobileLinks p {
+        color: var( --secondary-text-and-icons-color);
+        margin-left: 10px;
+    }
+}

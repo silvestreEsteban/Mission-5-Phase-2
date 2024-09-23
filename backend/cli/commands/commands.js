@@ -2,8 +2,9 @@
 
 import { Command } from "commander";
 import Listing from "../model.js";
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 import inquirer from "inquirer";
+import axios from "axios";
 import {
   addListing,
   updateListing,
@@ -78,17 +79,51 @@ program
     });
   });
 
+const updateQuestions = [
+  {
+    type: "input",
+    name: "price",
+    message: "Enter the new price of the listing",
+  },
+];
+program
+  .command("updatePrice <id>")
+  .alias("up")
+  .description("Update a listings price for bidding purposes")
+  .action((id) => {
+    prompt(updateQuestions).then((answers) => {
+      axios
+        .post("http://localhost:4000/api/updateBiddingPrice", {
+          id: id,
+          newPrice: answers.price,
+        })
+        .then((response) => {
+          console.log("Listing updated successfully:", response.data);
+        })
+        .catch((error) => {
+          console.error(
+            "Error updating listing:",
+            error.response ? error.response.data : error.message
+          );
+        });
+    });
+  });
+
 program
   .command("update <id>")
   .alias("u")
-  .description("Update a listings price for bidding purposes")
-  .action((id, options) => {
-    const { price } = options;
-    if (price) {
-      updatePriceInDatabase(id, price);
-    } else {
-      console.log("No price provided for update.");
-    }
+  .description("Update a listing")
+  .option("-t, --title <title>", "Title of the listing")
+  .option("-l, --location <location>", "Location of the listing")
+  .option("-c, --condition <condition>", "Condition of the listing")
+  .option("-s, --size <size>", "Size of the listing")
+  .option("-p, --price <price>", "Price of the listing")
+  .option("-co, --colour <colour>", "Colour of the listing")
+  .option("-d, --dimensions <dimensions>", "Dimensions of the listing")
+  .action((id) => {
+    prompt(questions).then((answers) => {
+      updateListing(id, answers);
+    });
   });
 
 program

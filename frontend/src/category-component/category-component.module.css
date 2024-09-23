@@ -91,7 +91,7 @@
 }
 
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 430px) {
     .CategoryContainer {
         width: 100%;
         margin: 0;
@@ -184,5 +184,36 @@
 
     .HiddenIconBrowse {
         margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1430px) and (min-width: 432px) {
+    .CategoryContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 91.3194444444%;
+        height: 70px;
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        margin-left: 62.5px;
+        margin-right: 62.5px;
+        margin-top: -35px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .Category {
+        width: 258%;
+        height: 49.803px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        font-family: Helvetica;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        cursor: pointer;
     }
 }

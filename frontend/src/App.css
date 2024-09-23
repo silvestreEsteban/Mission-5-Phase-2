@@ -2,8 +2,8 @@
   width: 100vw;
   max-width: 1440px;
   height: 100vh;
-  max-height: 2076px;
-  height: 2076px;
+  max-height: 2598px;
+  min-height: 2076px;
   margin: 0;
   background-color: #fff;
 }
