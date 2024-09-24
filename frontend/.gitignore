@@ -16,6 +16,7 @@ dist-ssr
 jest.config.js
 jest.setup.js
 coverage
+test
 
 purchasingContent.test.js
 
