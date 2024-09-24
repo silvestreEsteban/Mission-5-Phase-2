@@ -25,10 +25,10 @@
     --Hyperlink: #007ACD;
 }
 *{
-    font-family: Helvetica;
-    
+    font-family: Helvetica;    
 }
-@media (min-width:430px) {
+
+/* @media (min-width:430px) { */
 
     /* This page container only contains the listings field */
 .PageContainer {  
@@ -74,7 +74,7 @@ font-size: 16px;
     flex-direction: row;
     max-width: 1096px;
     height: 286px;
-    margin-left: 8%;
+    margin-left: 10%;
     margin-bottom: 3vh;
     flex-shrink: 0;
     border: 4px solid var(--Primary-Colour, #F9AF2C);
@@ -112,6 +112,7 @@ align-content: left;
 
 .info {
     margin-top: 20%;
+    font-size: 14px;
 }
 
 .listing strong {
@@ -141,12 +142,13 @@ align-content: left;
     flex-direction: row;
 }
 .OuterDesc{
+    width: 500px;
     margin-top: 4vh;
-    margin-left: 3%;
+    margin-left: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 .Description {
     display: flex;
@@ -158,9 +160,9 @@ align-content: left;
 .ShipAndPay {
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
     margin-top: 2vh;
     align-content: center;
-    margin-left: 2vw;
 }
 .shipping{
     margin-bottom: -15px;
@@ -192,7 +194,7 @@ align-content: left;
     color: var( --property);
 }
 
-}
+/* } */
 @media (max-width:890px){
     .listing{
         display:flex;
@@ -252,7 +254,11 @@ align-content: left;
 }
 
 @media (max-width:430px) {
-.PageContainer{
+    .ExtraPageContainer {
+        background-color: #FFFAE5; 
+    }
+    
+    .PageContainer{
     background-color: #FFFAE5;
     font-size: 1em;
     width: 100vw;
@@ -301,7 +307,7 @@ align-content: left;
         height: 691px;
         margin-top: 20px;
         padding-bottom: 40px;
-        margin-left: 11%;
+        margin-left: 10.5%;
         margin-bottom: 3vh;
         flex-shrink: 0;
         border: none;

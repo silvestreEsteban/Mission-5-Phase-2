@@ -23,7 +23,7 @@ const GetComparison = () => {
   return (
     <>
       <div className={myStyles.PageContainer}>
-        <div>
+        <div className={myStyles.ExtraPageContainer}>
           {listings.map((listing) => (
             <div key={listing._id} className={myStyles.listing}>
               <div className={myStyles.ImageSpace}>

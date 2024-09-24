@@ -11,7 +11,7 @@ import myStyles from "./Comparison.module.css"
 const ComparisonPage = () => {
   return (
     <>
-    <div>
+    <div className={myStyles.PageContainer}>
         <Navbar />
         <RedNavbar />
         <IntroSpace />
