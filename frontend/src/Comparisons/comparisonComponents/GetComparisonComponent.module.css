@@ -105,10 +105,46 @@ align-content: left;
 
 
 .ImageSpace img {
-    margin-top: 5%;
     max-width: 100%;
     max-height: 100%;
 }
+.WatchListIcon svg {
+    position: absolute;
+    top: -33px;
+    left: 272px;                  ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1 img {
+    width: 32px;
+    height: 29px;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+.Scroll2 img {
+    width: 29px;
+    height: 29px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.Scroll2 {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1{
+    position: absolute;
+    top: 130px;
+    right: -70px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
 
 .info {
     margin-top: 20%;

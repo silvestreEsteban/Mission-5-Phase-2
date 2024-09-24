@@ -30,8 +30,7 @@
 
 @media (min-width:430px) {
 
-.EmptyListing {
-}
+
 .EmptyListingSpace{
     order: 1000;
     position: static;
@@ -39,6 +38,7 @@
     flex-direction: row;
     max-width: 1096px;
     height: 286px;
+    margin-top: 15vh;
     margin-left: 10%;
     margin-bottom: 3vh;
     flex-shrink: 0;
@@ -51,14 +51,14 @@
     margin-top: -0.2%;
     width: 333px;
     height: 286px;
-    padding-left: 1%;
+    /* padding-left: 1%; */
     flex-shrink: 0;
     border: 2px solid var( --secondary-text-and-icons-color);
     background: var( --txt-and-bg-box-bg-color);
 }
 .BeforeLoadImageSpace img {
     padding-top: 35%;
-    padding-left: 40%;
+    padding-left: 43%;
 }
 
 .AddListing {
@@ -108,7 +108,7 @@ align-content: left;
 .EmptyImageSpace svg {
     position: absolute;
     top: -33px;
-    left: 272px;                  ;
+    left: 272px;
     width: 30%;
     height: auto;
     opacity: 1;
@@ -118,7 +118,42 @@ align-content: left;
     width: 100%;
     height: 100%;
 }
+.WatchListIcon svg {
+    position: absolute;
+    top: -33px;
+    left: 272px;                  ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1 img {
+    width: 32px;
+    height: 29px;
+    border-radius: 10px 0px 0px 10px; 
+}
 
+.Scroll2 img {
+    width: 29px;
+    height: 29px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.Scroll2 {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1{
+    position: absolute;
+    top: 130px;
+    right: -70px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
 .EmptyInfo {
     margin-top: 20%;
     font-size: 14px;
@@ -132,7 +167,7 @@ align-content: left;
 }
 
 .EmptyDetails {
-    margin-top: -0.1%;
+    margin-top: -0.2%;
     width: 203px;
     height: 286px;
     padding-left: 1%;
@@ -172,9 +207,7 @@ align-content: left;
      align-content: center;
    margin-top: 2vh;
 }
-/* .EmptyShipAndPay p {
-    word-wrap: break-word;
-} */
+
 
 .EmptyShipping{
     margin-bottom: -15px;
