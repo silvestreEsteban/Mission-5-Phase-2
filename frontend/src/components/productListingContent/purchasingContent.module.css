@@ -1,0 +1,546 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+}
+
+
+.Auction {
+    width: 100%;
+    height: 380px;
+    border-radius: 5px;
+    border: 1px solid #D7D5D2;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    font-family: Helvetica;
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Auction h2 {
+    color: var(--header-text-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+#BeenOutbid {
+    color: var(--marketplace);
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+#LeadingTheBid {
+    color: var(--primary-text-and-icons-color);
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+}
+
+
+.Auction p {
+    margin-right: 25px;
+    margin-top: -30px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+    color: var(--secondary-text-and-icons-color);
+}
+
+.Auction button {
+    display: flex;
+    width: 385px;
+    height: 50px;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #007ACD;
+    border: none;
+    outline: none;
+    color: var(--txt-and-bg-box-site-bg-color);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+
+#infoSVG {
+    margin-top: -5px;
+    position: absolute;
+
+}
+
+#BiddingPriceSpan {
+    display: flex;
+    color: var(--header-text-color);
+}
+
+#BiddingPriceSpan h1 {
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+#BiddingPriceSpan span {
+    margin-top: -10px;
+}
+
+#BiddingPriceSpan h4 {
+    margin-top: -6px;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+}
+
+
+#TimeHeader {
+    color: var(--secondary-text-and-icons-color);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0px;
+
+}
+
+
+.PurchasingContentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.BuyNowButton {
+    display: flex;
+    width: 367px;
+    height: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--txt-and-bg-box-bg-color);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    background-color: var(--brand-secondary-hyperlink);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: -90px
+}
+
+.PurchasingContentDiv h1 {
+    color: var(--header-text-color);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 0px;
+}
+
+.PurchasingContentDiv h4 {
+    color: var(--secondary-text-and-icons-color);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+    margin-top: -25px;
+}
+
+.BuyNowContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    height: 361px;
+    justify-content: space-evenly;
+}
+
+.SmallUserInfoBox {
+    width: 367px;
+    height: 91px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #D7D5D2;
+    background-color: var(--txt-and-bg-box-site-bg-color);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.SmallUserImage {
+    width: 53px;
+    height: 53px;
+    margin: 19px;
+
+}
+
+#PickleRickSmallIcon {
+    width: 29.444px;
+    height: 38.278px;
+    flex-shrink: 0;
+    margin-top: -70px;
+    margin-bottom: 26px;
+    margin-left: 12px;
+}
+
+
+
+.SmallUserInfo h4 {
+    color: #007ACD;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+    height: 21px;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.SmallUserInfo p {
+    color: var(--secondary-text-and-icons-color);
+    font-family: Helvetica;
+    font-style: normal;
+    margin-top: -10px;
+}
+
+.AddToCartButton {
+    display: flex;
+    width: 367px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--ui-button-color-2);
+    background-color: #F0EFEE;
+    border-radius: 5px;
+    border: none;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: -40px;
+}
+
+#AuctionReserveP {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+#AuctionBidsHistoryP {
+    color: var(--brand-secondary-hyperlink);
+}
+
+#AuctionBidsHistoryP:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.AuctionBottomSection {
+    width: 100%;
+    height: 79px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #D7D5D2;
+    background: #FAF9F8;
+
+}
+
+#BuyNowHeader {
+    margin-top: 33px;
+    color: var(--secondary-text-and-icons-color);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+#BuyNowPrice {
+    color: var(--header-text-color);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+#BiddingProcessHiddenDiv {
+    display: none;
+}
+
+#BiddingProcessShowOnClick {
+    width: 676px;
+    height: 368px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    margin-left: -600px;
+    margin-top: -750px;
+    z-index: 100;
+    background-color: var(--txt-and-bg-box-site-bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#BiddingProcessColumn0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#BiddingProcessColumn1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#BiddingProcessColumn1 input {
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+
+}
+
+#BiddingProcessColumn0 h2 {
+    margin-left: -100px;
+    color: var(--header-text-color);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+#BiddingProcessColumn2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#BiddingProcessColumn2 p {
+    color: var(--secondary-text-and-icons-color);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%;
+    width: 601px;
+    height: 93px;
+
+
+}
+
+#BiddingProcessColumn3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#BiddingProcessColumn3 label {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--secondary-text-and-icons-color);
+    margin-left: 10px;
+}
+
+#BiddingProcessColumn4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+#BiddingProcessColumn4 button {
+    display: flex;
+    width: 165px;
+    height: 51px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ConfirmBidButton {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 5px;
+    background-color: var(--ui-button-color-2);
+    outline: none;
+    border: none;
+    margin-right: 20px;
+}
+
+#CancelBidButton {
+    background-color: var(--txt-and-bg-box-bg-color);
+    color: var(--ui-button-color-2);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-left: 24px;
+}
+
+@media screen and (max-width: 431px) {
+
+    #BiddingProcessShowOnClick {
+        width: 376px;
+        height: 368px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -999px;
+        z-index: 100;
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #BiddingProcessColumn0 h2 {
+        margin-left: -50px;
+        color: var(--header-text-color);
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    #BiddingProcessColumn1 input {
+        height: 30px;
+        width: 200px;
+        margin-top: 20px;
+
+    }
+
+    #BiddingProcessColumn2 p {
+        color: var(--secondary-text-and-icons-color);
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 223%;
+        width: 301px;
+        height: 93px;
+    }
+
+    #BiddingProcessColumn3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 30px;
+        margin-top: -20px;
+    }
+
+    #BiddingProcessColumn3 label {
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--secondary-text-and-icons-color);
+        margin-left: 10px;
+    }
+
+    #BiddingProcessColumn4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    #BiddingProcessColumn4 button {
+        display: flex;
+        width: 105px;
+        height: 51px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+}

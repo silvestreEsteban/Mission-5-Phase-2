@@ -1,0 +1,72 @@
+.search{
+    color:  #44413D;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 702.648px;
+    background: url('../images/icons/.search.png')no-repeat left;
+    background-position:  2px 3px;
+    padding-left: 5px;
+ 
+}
+.button1{
+    border-radius: 50px;
+background: #006EBD;
+
+
+}
+.button2{
+   
+    color:#006EBD;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%; 
+
+
+}
+.button3{
+    color:#006EBD;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%; 
+
+}
+.button4{
+    color:#006EBD;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%; 
+
+}
+.button5{
+    color:#006EBD;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%; 
+
+}
+.button6{
+    color:#006EBD;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 223%; 
+
+
+}

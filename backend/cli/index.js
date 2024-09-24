@@ -4,6 +4,7 @@ import { Command } from "commander";
 import Listing from "./model.js";
 import Carousel from "./carouselModel.js";
 import seedCarouselData from "./seed/seedCarousel.js";
+import User from "./seed/userModel.js";
 
 const mongoURI = "mongodb://127.0.0.1/tradeMeMockData";
 mongoose.Promise = global.Promise;
@@ -48,6 +49,13 @@ const findListing = (title) => {
 const addCarouselSeedData = () => {
   Carousel.insertMany(seedCarouselData).then(() => {
     console.log("Carousel seed data added successfully");
+    mongoose.connection.close();
+  });
+};
+
+const addUserSeedData = () => {
+  User.insertMany(seedUserData).then(() => {
+    console.log("User seed data added successfully");
     mongoose.connection.close();
   });
 };

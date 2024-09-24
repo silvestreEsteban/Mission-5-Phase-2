@@ -1,0 +1,266 @@
+.firstLink
+{
+   background-color: #6A6DD4;
+    /* margin: 71px; */
+    height: 223px;
+    width:448px;
+    color: white;
+    padding-left: 10px;
+}
+.firstImg{
+    position: absolute;
+    padding-left: 221px;
+    height:223px;
+    width: 227px;
+    flex-shrink: 0;
+    margin-top: -25px;
+}
+.textDiv1
+{
+   height: 0px;
+    width: 100px;
+}
+.button1{
+    color: #6A6DD4;
+    background-color: #d788af;
+    border-radius: 4px;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+
+   
+}
+
+.property{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+margin-top: 25px;
+}
+.open{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+width: 140px;
+height: 60px;
+
+}
+
+.outerLink{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    max-width: 1440px;
+}
+
+
+.secondLink
+{
+   background-color: #FC0D86;
+/* margin: 71px; */
+    height: 223px;
+    width:448px;
+    color: white;
+    padding-left: 1%;
+}
+.textDiv2
+{
+   height: 0px;
+    width: 100px;
+}
+.secondImg{
+    position: absolute;
+    padding-left: 221px;
+    height:223px;
+    width: 227px;
+    flex-shrink: 0;
+    margin-top: -35px;
+}
+.button2{
+    border-radius: 5px;
+background: #FFF;
+color: #FC0D86;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+   
+}
+
+
+.thirdLink
+{
+   background-color: #FC0D86;
+    height: 223px;
+    width:448px;
+    color: white;
+    padding-left: 10px;
+}
+.textDiv3
+{
+   height: 0px;
+    width: 100px;
+}
+.thirdImg{
+    position: absolute;
+    padding-left: 221px;
+    height:223px;
+    width: 227px;
+    flex-shrink: 0;
+    margin-top: -37px;
+}
+.button3{
+    background-color: #FFEB33;
+    border-radius: 4px;
+    color: #FD0884;
+text-align: center;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+.trending{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+margin-top: 37px;
+}
+.shop{
+    color: #FFF;
+
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+width: 132px;
+height: 60px;
+}
+  
+
+.featured{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+margin-top:35px ;
+
+}
+.rare{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+width: 155px;
+height: 60px;
+}
+
+
+
+
+@media screen and (max-width: 428px) {
+    .outerLink {
+        display: flex;
+        margin-top: 23%;
+        flex-wrap: wrap;
+        border-radius: 0;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .firstLink {
+        margin: 3%;
+        width: 266px;
+        height: 132px;
+    }
+    .firstImg {
+        width: 135px;
+        height: 132px;
+    }
+    .secondImg {
+        width: 135px;
+        height: 132px;
+    }
+    .secondLink {
+        margin: 3%;
+        width: 266px;
+        height: 132px;
+    }
+    .thirdImg{
+        width: 135px;
+        height: 132px;
+    }
+    .thirdLink{
+        margin: 3%;
+        width: 266px;
+        height: 132px;
+    }
+    .open{
+        color: #FFF;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+width: 112px;
+height: 37px;
+    }
+    .property{
+        font-size: 12px;
+        width: 66px;
+        height: 16px;
+    }
+    .button1{
+        margin-top: 10px;
+    }
+    .featured{
+        font-size: 12px;
+        width: 66px;
+        height: 16px;
+        margin-top: 25px;
+    }
+    .secondImg{
+        margin-top: -25px;
+    }
+    .rare{
+        font-size: 14px;
+        width: 112px;
+height: 37px;
+    }
+    .button2{
+        margin-top: 10px;
+    }
+    .trending{
+        font-size: 12px;
+        width: 66px;
+        height: 16px;
+        margin-top: 25px;
+    }
+    .thirdImg{
+        margin-top: -25px;
+    }
+    .shop{
+        font-size: 14px;
+        width: 112px;
+height: 37px;
+    }
+    .button3{
+        margin-top: 10px;
+    }
+}
