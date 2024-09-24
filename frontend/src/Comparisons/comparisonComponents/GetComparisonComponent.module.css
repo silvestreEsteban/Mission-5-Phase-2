@@ -1,0 +1,517 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+
+    --community: #007ACD;
+    --Hyperlink: #007ACD;
+}
+*{
+    font-family: Helvetica;    
+}
+
+/* @media (min-width:430px) { */
+
+    /* This page container only contains the listings field */
+.PageContainer {  
+    margin-top: 15vh;
+    margin-bottom: 15vh;;
+}
+
+.SpaceContainer{
+    max-width: 1440px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.SpaceContainer h1{
+    margin-top: 10vh;
+    margin-left: 30%;
+    margin-bottom: 8vh;
+
+}
+
+.SpaceContainer p {
+    font-family: Helvetica;
+font-size: 16px;
+    color: var( --secondary-text-and-icons-color);
+}
+
+.ReturnButton {
+    margin-top: 30px;
+    padding: 1px 70px;    
+    border-radius: 5px;
+    background-color: var(--ui-button-color-2);
+}
+.ReturnButton h2 {
+    color: var(--txt-and-bg-box-site-bg-color);
+}
+
+.listing {
+    order: +1;
+    display: flex;
+    flex-direction: row;
+    max-width: 1096px;
+    height: 286px;
+    margin-left: 10%;
+    margin-bottom: 3vh;
+    flex-shrink: 0;
+    border: 4px solid var(--Primary-Colour, #F9AF2C);
+    background: #FFFAE5;
+    font-size: 14px;
+}
+.listing p {
+    color: var(--secondary-text-and-icons-color);
+}
+.Remove {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30vh;
+    margin-right: .5vw;
+}
+.Remove button {
+    background-color: #F9AF2C;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* align-content: center; */
+    font-size: 12px;
+}
+.Remove strong {
+    color: #ffffff;
+}
+.Remove p {
+    margin-left: 1vw;
+}
+.listing h2 {
+    padding: 2%;
+position:relative;
+align-content: left;
+}
+
+.ImageSpace {
+    margin-top: -0.1%;
+    max-width: 333px;
+    max-height: 285px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px 3px 0px 5px;
+    border: 2px solid #FFC041;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+
+.ImageSpace img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.ImageSpaceButton2 {
+    display: none;
+}
+.ImageSpaceButton strong{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 18px;
+    color: var( --txt-and-bg-box-site-bg-color);
+}
+
+.ImageSpaceButton {
+    border: none;
+    position: absolute;
+    top: 215px;
+    left: 93px;                  ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
+.ImageSpaceButton button {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    padding: 12px 19px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--Button-Colour-2, #006EBD);
+}
+.WatchListIcon svg {
+    position: absolute;
+    top: -33px;
+    left: 266px;                  ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1 img {
+    width: 29px;
+    height: 29px;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+.Scroll2 img {
+    width: 29px;
+    height: 29px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.Scroll2 {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+    
+}
+.Scroll1{
+    position: absolute;
+    top: 130px;
+    right: -71px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
+
+.info {
+    margin-top: 20%;
+    font-size: 14px;
+}
+
+.listing strong {
+    color: var(--header-text-color)
+}
+.Description p {
+    color: var( --secondary-text-and-icons-color);
+}
+
+.Details {
+    margin-top: -0.1%;
+    width: 203px;
+    height: 286px;
+    padding-left: 1%;
+    flex-shrink: 0;
+    border: 2px solid #FFC041;
+    background: #FFFAE5;
+    font-size: 16px;
+}
+
+.DescInfo {
+    margin-top: 5%;
+}
+
+.bidPrice {
+    display: flex;
+    flex-direction: row;
+}
+.OuterDesc{
+    width: 500px;
+    margin-top: 4vh;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+.Description {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0%;
+    padding-left: 3%;
+}
+
+.ShipAndPay {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 2vh;
+    align-content: center;
+}
+.shipping{
+    margin-bottom: -15px;
+    margin-left: -1vw;
+}
+
+.payment{
+    margin-left: -0.8vw;
+}
+
+.shipping,
+.pickup,
+.payment { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    white-space: wrap;
+    word-break: break-all;
+}
+.pickup {
+    display: flex;
+    flex-direction: row;
+    color: var( --property);
+}
+
+.pickup,
+.payment p {
+    color: var( --property);
+}
+
+/* } */
+@media (max-width:890px){
+    .listing{
+        display:flex;
+        flex-direction: column;
+        max-width: 331px;
+        height: 691px;
+        margin-left: 10%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: 4px solid var(--Primary-Colour, #F9AF2C);
+        background: #FFFAE5;
+    }
+
+}
+
+@media (max-width: 1340px){
+    .listing {
+        order: +1;
+        display: flex;
+        flex-direction: row;
+        max-width: 796px;
+        height: 286px;
+        margin-left: 7%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: 4px solid var(--Primary-Colour, #F9AF2C);
+        background: #FFFAE5;
+        font-size: 14px;
+    }
+    .listing p {
+        color: var(--secondary-text-and-icons-color);
+    }
+    
+    /* .listing h2 {
+        padding: 2%;
+    position:relative;
+    align-content: left;
+    } */
+    
+    .ImageSpace {
+        margin-top: -0.1%;
+        max-width: 233px;
+        max-height: 285px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px 3px 0px 5px;
+        border: 2px solid #FFC041;
+        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    } 
+    
+    .ImageSpace img {
+        margin-top: 25%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    .ExtraPageContainer {
+        background-color: #FFFAE5; 
+    }
+    
+    .PageContainer{
+    background-color: #FFFAE5;
+    font-size: 1em;
+    width: 100vw;
+    margin-left: 0vw;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.SpaceContainer{
+    max-width: 1440px;
+    height: 20vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.SpaceContainer h1{
+    font-size: 1.25em;
+    margin-top: 8vh;
+    margin-left: 30%;
+}
+
+.SpaceContainer p {
+    color: var( --secondary-text-and-icons-color);
+    text-align: center;
+    order: 5;
+}
+
+.ReturnButton {
+    order: 4;
+    margin-top: 1vh;
+    padding: 1px 50px;    
+    border-radius: 5px;
+    background-color: var(--ui-button-color-2);
+}
+.ReturnButton h2 {
+    font-size: 1em;
+    
+}
+
+    .listing{
+        display:flex;
+        flex-direction: column;
+        box-shadow: 0 0 3px 0   var(--box-highlight-color);
+        max-width: 331px;
+        height: 741px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        margin-left: 10.5%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: none;
+        background: var( --txt-and-bg-box-site-bg-color);
+    }
+    .ImageSpace {
+        margin-top: -0.1%;
+        max-width: 331px;
+        max-height: 285px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px 3px 0px 5px;
+        border: none;
+        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    } 
+
+    .Remove {
+        display: none;   margin-right: .5vw;
+    }
+    .ImageSpaceButton {
+        display: none;
+
+    }
+    .ImageSpaceButton2 {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        padding: 12px 19px;
+        /* justify-content: center; */
+        align-items: center;
+        border-radius: 5px;
+        background-color: var(--Button-Colour-2, #006EBD);
+    }
+    
+    .ImageSpace img {
+        margin-top: 0%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .Details {
+        margin-top: -5vh;
+        width: 331px;
+        height: 286px;
+        padding-left: 5vw;
+        flex-shrink: 0;
+        border: none;
+        background:none;
+        margin-bottom: -3vh;
+    }    
+    .OuterDesc{
+        width: 331px;
+        margin-left: -5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .Description {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0%;
+        padding-left: 1%;
+    }
+
+ 
+    .DescInfo{
+        font-size: 12px;
+        width: 331;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        margin-left: 2vw;
+        margin-bottom: 2vh;
+    }
+    .SizeCond{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vw;
+    }
+    .DimeCol{
+        display: flex;
+        flex-direction: column;
+        margin-left: 13vw;
+    }
+    .ShipAndPay {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vh;
+        align-content: center;
+    }
+
+    .ShipAndPay p {
+        word-wrap: break-word;
+    }
+    
+    .shipping{
+        align-items: center;
+        padding-bottom: -1vh;
+        margin-left: -3vw;
+    }
+    .pickup{
+        align-items: center;
+        margin-bottom: -1vh;
+    }
+    
+    .payment{
+        align-items: center;
+        margin-top: 1vh; 
+        margin-left: -3vw;
+
+    }
+
+
+    
+   
+}

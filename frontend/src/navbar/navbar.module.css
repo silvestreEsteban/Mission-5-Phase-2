@@ -106,6 +106,10 @@
     cursor: pointer;
 }
 
+.ComparePageIcon p {
+    color: var( --secondary-text-and-icons-color);
+}
+
 .BottomContainerLeft {
     width: 331px;
     height: 41px;
