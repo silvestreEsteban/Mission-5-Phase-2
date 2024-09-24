@@ -33,7 +33,7 @@
     /* This page container only contains the listings field */
 .PageContainer {  
     margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-bottom: 15vh;;
 }
 
 .SpaceContainer{
@@ -84,7 +84,28 @@ font-size: 16px;
 .listing p {
     color: var(--secondary-text-and-icons-color);
 }
-
+.Remove {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30vh;
+    margin-right: .5vw;
+}
+.Remove button {
+    background-color: #F9AF2C;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* align-content: center; */
+    font-size: 12px;
+}
+.Remove strong {
+    color: #ffffff;
+}
+.Remove p {
+    margin-left: 1vw;
+}
 .listing h2 {
     padding: 2%;
 position:relative;
@@ -108,16 +129,47 @@ align-content: left;
     max-width: 100%;
     max-height: 100%;
 }
+.ImageSpaceButton2 {
+    display: none;
+}
+.ImageSpaceButton strong{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 18px;
+    color: var( --txt-and-bg-box-site-bg-color);
+}
+
+.ImageSpaceButton {
+    border: none;
+    position: absolute;
+    top: 215px;
+    left: 93px;                  ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
+.ImageSpaceButton button {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    padding: 12px 19px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--Button-Colour-2, #006EBD);
+}
 .WatchListIcon svg {
     position: absolute;
     top: -33px;
-    left: 272px;                  ;
+    left: 266px;                  ;
     width: 30%;
     height: auto;
     opacity: 1;
 }
 .Scroll1 img {
-    width: 32px;
+    width: 29px;
     height: 29px;
     border-radius: 10px 0px 0px 10px; 
 }
@@ -135,11 +187,12 @@ align-content: left;
     width: 30%;
     height: auto;
     opacity: 1;
+    
 }
 .Scroll1{
     position: absolute;
     top: 130px;
-    right: -70px;
+    right: -71px;
     width: 30%;
     height: auto;
     opacity: 1;
@@ -339,8 +392,9 @@ align-content: left;
     .listing{
         display:flex;
         flex-direction: column;
+        box-shadow: 0 0 3px 0   var(--box-highlight-color);
         max-width: 331px;
-        height: 691px;
+        height: 741px;
         margin-top: 20px;
         padding-bottom: 40px;
         margin-left: 10.5%;
@@ -360,6 +414,24 @@ align-content: left;
         border: none;
         background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     } 
+
+    .Remove {
+        display: none;   margin-right: .5vw;
+    }
+    .ImageSpaceButton {
+        display: none;
+
+    }
+    .ImageSpaceButton2 {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        padding: 12px 19px;
+        /* justify-content: center; */
+        align-items: center;
+        border-radius: 5px;
+        background-color: var(--Button-Colour-2, #006EBD);
+    }
     
     .ImageSpace img {
         margin-top: 0%;

@@ -31,7 +31,7 @@ const AddToCompare = () => {
       <div className={myStyles.ExtraPageContainer}>
         {listings.map((listing) => (
           <div key={listing._id} className={myStyles.EmptyListing}>
-            <div className={myStyles.Scroll2}> - </div>
+            
             <div className={myStyles.EmptyImageSpace}>
             <div className={myStyles.WatchListIcon}><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M56.4064 28.744C58.6452 28.7313 60.4605 30.5467 60.4379 32.7755L59.9883 77.086L11.8984 28.9961L56.4064 28.744Z" fill="#FFC041"/>
@@ -55,6 +55,7 @@ const AddToCompare = () => {
             </div>
             <div className={myStyles.EmptyOuterDesc}>
               <div className={myStyles.EmptyDescription}>
+                
                 <div className={myStyles.EmptyDescInfo}>
                   <div className={myStyles.EmptySizeCond}>
                     <p>
@@ -73,6 +74,7 @@ const AddToCompare = () => {
                     </p>
                   </div>
                 </div>
+                
               </div>
               <div className={myStyles.EmptyShipAndPay}>
                 <div className={myStyles.EmptyShipping}>
@@ -122,6 +124,7 @@ const AddToCompare = () => {
                   Cash, NZ Bank Deposit
                 </p>
               </div>
+              <div className={myStyles.Remove}> <button> <strong>x</strong>  </button><p>remove</p> </div>
             </div>
           </div>
         ))}
@@ -147,3 +150,4 @@ const AddToCompare = () => {
 };
 
 export default AddToCompare; // Export the component
+
