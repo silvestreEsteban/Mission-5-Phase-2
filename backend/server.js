@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import { clockSVG } from "../frontend/src/components/productListingContent/productListingSVG";
 // import productRouter from "../Router/productRouter.js";
 dotenv.config();
 
