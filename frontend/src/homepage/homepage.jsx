@@ -12,6 +12,7 @@ const Homepage = () => {
     return (
         <>
         <div className="layout-main-page">
+           
         <Navbar />
         <SearchComponent />
 
@@ -26,6 +27,7 @@ const Homepage = () => {
         <Footer />
         </div>
         </div>
+        
         </>
     )
 }
