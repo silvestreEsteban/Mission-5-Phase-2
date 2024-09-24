@@ -11,7 +11,7 @@ const [location, setLocation] = useState('');
 
     const fetchListingInfo = async () => {
         try {
-            const response = await axios.get("http://localhost:4000/api/listingInfo");
+            const response = await axios.get("http://localhost:3000/api/listingInfo");
             setCondition(response.data[0].condition);
             setColor(response.data[0].colour);
             setType(response.data[0].size);

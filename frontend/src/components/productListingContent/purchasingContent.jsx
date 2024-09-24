@@ -32,7 +32,7 @@ const updateBiddingPrice = async (id, newPrice) => {
     try {
         console.log("Updating bidding price with ID:", id, "and new price:", newPrice);
         const response = await axios.post(
-            "http://localhost:4000/api/updateBiddingPrice",
+            "http://localhost:3000/api/updateBiddingPrice",
             { id, newPrice },
             {
                 headers: {
@@ -54,7 +54,7 @@ const updateBiddingPrice = async (id, newPrice) => {
 
 const fetchUserInfo = async () => {
     try {
-        const response = await axios.get("http://localhost:4000/api/userInfo");
+        const response = await axios.get("http://localhost:3000/api/userInfo");
         setLocation(response.data[0].location);
         setFeedback(response.data[0].feedback);
     } catch (error) {
@@ -64,7 +64,7 @@ const fetchUserInfo = async () => {
 
 const fetchBiddingPrice = async () => {
     try {
-        const response = await axios.get("http://localhost:4000/api/listingInfo");
+        const response = await axios.get("http://localhost:3000/api/listingInfo");
         setPrice(response.data[0].price);
         setItemId(response.data[0]._id);
         
