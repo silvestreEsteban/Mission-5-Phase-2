@@ -18,9 +18,7 @@ export default function ProductListingContent() {
         <div className={styles.RightSide}>
         <PurchasingContent />
         </div>
-        
         </div>
-        
         </>
     )
 }

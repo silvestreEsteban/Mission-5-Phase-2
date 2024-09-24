@@ -8,9 +8,33 @@
   padding: 0;
   background-color: #fff;
 }
-.font16{
+
+.font16 {
   font-size: 16px;
 }
-.font20{
+
+.font20 {
   font-size: 20px;
+}
+
+
+@media screen and (max-width: 431px) {
+  .layout-main-page {
+    width: 100vw;
+    max-width: 431px;
+    height: 2076px;
+    max-height: 2598px;
+    min-height: 2076px;
+    margin: 0px;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .font16 {
+    font-size: 16px;
+  }
+
+  .font20 {
+    font-size: 20px;
+  }
 }
