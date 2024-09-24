@@ -7,6 +7,7 @@ import LinkImage from '../Trademehome/Component/LinkImage'
 import Footer from "../Footer/footer";
 import '../App.css';
 import styles from '../components/productListingContent/productListing.module.css';
+import CategoryComponent from "../category-component/category-component";
 
 const Homepage = () => {
     return (
@@ -15,7 +16,7 @@ const Homepage = () => {
            
         <Navbar />
         <SearchComponent />
-
+        <CategoryComponent />
         {/* Center portion */}
         <LinkImage/>
         <CategoryInfo/>

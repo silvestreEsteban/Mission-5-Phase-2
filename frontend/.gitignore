@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 *.env
+.babelrc
+jest.config.js
+jest.setup.js
+coverage
+test
+
+purchasingContent.test.js
 
 # Editor directories and files
 .vscode/*
