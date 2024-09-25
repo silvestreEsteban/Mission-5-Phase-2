@@ -2,7 +2,9 @@
     width: 327px;
     height:163px;
 }
-
+.body{
+    margin-top: 10px;
+}
 .watchList{
     z-index: 99999;
     position: absolute;

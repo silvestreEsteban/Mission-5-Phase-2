@@ -20,7 +20,9 @@ function DollerReserv() {
         <div className={styles.dollerReserv}>$1 Reserve</div>
         <div className={styles.reserv}>
           {itemList.map((item, index) => (
+            (index<4)?
             <ItemList key={index} item={item} />
+            :""
           ))}
         </div>
       </div>

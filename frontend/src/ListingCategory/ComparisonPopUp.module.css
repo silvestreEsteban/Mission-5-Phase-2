@@ -1,9 +1,242 @@
-
-.layout{
+.mainBody{
    display: flex;
-   justify-content:space-around
+   flex-direction: column;
+   gap: 10px;
+   width: 96%;
+   margin-left: 19px;
 }
+.mainBodyButton
+{
+   display: flex;
+   justify-content: center;
+   margin-top: 5%;
+}
+
+.sortButton{
+   width: 241px;
+   height: 51px;
+   flex-shrink: 0;
+   border-radius: 2px;
+   border: 1px solid #D7D7D7;
+    background: #FFF;
+   color: var(--secondary-text-icons, #76716D);
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+}
+
+.listButton{
+   color: #595959;
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+border-radius: 2px;
+border: 1px solid #D7D7D7;
+background: #FFF;
+width: 122px;
+height: 51px;
+flex-shrink: 0;
+
+}
+
+.galleryButton{
+   color: #595959;
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+border-radius: 2px;
+border: 2px solid #4F4F4F;
+background: #FFF;
+width: 122px;
+height: 51px;
+flex-shrink: 0;
+
+}
+.showingResult{display: flex;
+   display: flex;
+width: 94%;
+justify-content: space-between;
+align-items: center;
+padding:2%;
+}
+.resulttext{
+   color: var(--Header-Text, #44413D);
+/* Heading */
+font-family: Helvetica;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 30px */
+}
+.compareListingButton{
+   width: 292px;
+height: 61px;
+/* flex-shrink: 0;
+background-color: #F9AF2C;
+color: var(--Header-Text, #44413D);
+text-align: center; */
+/* Heading */
+/* font-family: Helvetica;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;  */
+border: none;
+}
+
+.popUp{
+   height: 480px;
+   width: 95%;
+   position: absolute;
   
-@media screen and (max-width: 428px) {
+   margin-top: -20%;
+   z-index: 99999;
+margin-left: 2%;
+}
+.displayImage{
+   display: inline-flex;
+   height: 337px;
+   padding: 23px 45px;
+   justify-content: center;
+   align-items: center;
+   gap: 17px;
+   flex-shrink: 0;
+   border-radius: 0px 0px 5px 5px;
+background: #FFF;
+
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
    
-} 
+}
+.dummyFrame{
+   width: 243px;
+   height: 136.688px;
+   flex-shrink: 0;
+   display: flex;
+   justify-content: center;
+   border-radius: 5px;
+background: #F6F5F4;
+
+}
+.plusButton{
+   width: 100%;
+height: 43px;
+flex-shrink: 0;
+border-radius: 10px 10px 0px 0px;
+background: #FFC041;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+position: relative;
+}
+.popUpPlus{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+.compareListingOuter{
+   display: flex;
+   justify-content: center;
+   /* padding-bottom: 5px; */
+   /* margin-top: 20px; */
+}
+.compareListing{display: flex;
+   padding: 10px 25px 10px 55px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   position: absolute;
+   border-radius: 5px;
+   background: var(--Button-Colour-2, #006EBD);
+
+   color: #FFF;
+
+   text-align: center;
+   /* Subheading */
+   font-family: Helvetica;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%;
+   margin-top: 10px;
+}
+   
+.comparisonDetails{
+
+   height: 315px;
+   padding-top: 5%;
+ 
+   display: inline-flex;
+   gap: 30px;
+   /* padding: 23px 45px; */
+   width:100%;
+   background-color: #FFFAE5;
+   border-radius: 4px;
+}
+.resultBar{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 5%;
+}
+.listing{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 1%;
+   flex-direction:row;
+   flex-wrap: wrap;
+}
+.backToTopOuter{
+   display: flex;
+width: 100%;
+height: 82.336px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.backToTop{
+   display: flex;
+width: 358px;
+height: 82.336px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #007ACD;
+
+/* Body regular */
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 223%; 
+
+}
+
+@media screen and (max-width: 430px) {
+ 
+   .mainBody{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 185%;
+      margin-left: 19px;
+   }
+
+      .mainBodyButton
+{
+   display: flex;
+   justify-content: center;
+   margin-top: 30%;
+}
+
+   }
+  
+
+
