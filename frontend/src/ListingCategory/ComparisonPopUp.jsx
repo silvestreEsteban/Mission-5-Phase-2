@@ -59,7 +59,7 @@ function ComparisonPopUp() {
           onClick={handleClickOpen}
           className={styles.compareListingButton}
         >
-          Compare Listings
+          <img src="./Image/Comparisonbutton.png" />
         </button>
       </div>
       <div>
@@ -96,7 +96,9 @@ function ComparisonPopUp() {
                       </div>
                       <div className={styles.comparisonDetails}>
                         {productList.map((item, index) => (
+                          (index<4)?
                           <ComparisonDetails key={index} item={item} />
+                          :""
                         ))}
                       </div>
                     </div>
@@ -106,7 +108,9 @@ function ComparisonPopUp() {
                 </div>
                 <div className={styles.displayImage}>
                   {productList.map((item, index) => (
+                     (index<4)?
                     <ComparisonImage key={index} item={item} />
+                    :""
                   ))}{" "}
                   <div className={styles.dummyFrame}>
                     <svg
