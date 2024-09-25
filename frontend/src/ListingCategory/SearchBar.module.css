@@ -1,21 +1,70 @@
-.search{
-    color:  #44413D;
-    font-family: Helvetica;
+.searchBody{
+    margin-top: 5%;
+}
+
+.SearchBar {
+    width: 780px;
+    height: 59px;
+    background: var(--txt-and-bg-box-site-bg-color);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 32px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.SearchBar input {
+    width: 708px;
+    height: 30px;
+    background: var(--txt-and-bg-box-site-bg-color);
+    outline: none;
+    margin-left: 55px;
+    color: var(--secondary-text-and-icons-color);
+    border: none;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    width: 702.648px;
-    background: url('../images/icons/.search.png')no-repeat left;
-    background-position:  2px 3px;
-    padding-left: 5px;
- 
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 12px;
+}
+.buttonOuter{
+  display: flex;
+  /* justify-content: space-between 1px; */
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+
+
+
+.SearchBar button:focus {
+    outline: none;
+    border: none;
 }
 .button1{
     border-radius: 50px;
 background: #006EBD;
+color: #FFF;
+
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+text-align: center;
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 223%; 
+margin-left: 10px;
 
 
+}
+.SearchIcon {
+    margin-left: 14px;
+    margin: 1px solid black;
 }
 .button2{
    
@@ -26,7 +75,14 @@ background: #006EBD;
     font-style: normal;
     font-weight: 400;
     line-height: 223%; 
-
+    border-radius: 50px;
+    border: 1px solid  #006EBD;
+    margin-left: 10px;
+  
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+gap: 5px;
 
 }
 .button3{
@@ -36,7 +92,17 @@ background: #006EBD;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 223%; 
+    line-height: 223%;
+    border-radius: 50px; 
+    border: 1px solid  #006EBD;
+    margin-left: 10px;
+
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+
 
 }
 .button4{
@@ -46,8 +112,20 @@ background: #006EBD;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 223%; 
+    line-height: 223%;
+    border-radius: 50px; 
+    border: 1px solid  #006EBD;
 
+    margin-left: 10px;
+
+
+
+
+    
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+gap: 5px;
 }
 .button5{
     color:#006EBD;
@@ -56,8 +134,16 @@ background: #006EBD;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 223%; 
+    line-height: 223%;
+    border-radius: 50px; 
+    border: 1px solid  #006EBD;
 
+    margin-left: 10px;
+  
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+gap: 5px;
 }
 .button6{
     color:#006EBD;
@@ -66,7 +152,15 @@ background: #006EBD;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 223%; 
+    line-height: 223%;
+    border-radius: 50px; 
+    border: 1px solid  #006EBD; 
+    margin-left: 10px;
 
+   
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+gap: 5px;
 
 }

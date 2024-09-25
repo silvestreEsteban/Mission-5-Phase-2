@@ -1,0 +1,132 @@
+
+
+.DetailsOuter{
+    border-radius: 5px 5px 0px 0px;
+    background: #FFF;
+    width: 243px;
+height: 316px;
+flex-shrink: 0;
+margin-left: 25px;
+}
+#text{
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.ItemDetailsText{
+    height: 255px;
+}
+.titleOuter{
+    display: flex;
+    justify-content: space-between;
+  }
+.title{
+    color: var(--Header-Text, #44413D);
+    /* Heading */
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; }
+
+.time{
+    color: var(--secondary-text-icons, #76716D);
+
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%}
+
+.progress{
+    color: var(--Property, #29A754);
+    font-family: Inter;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */}
+
+.price{
+    color: var(--secondary-text-icons, #76716D);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+
+color: var(--Header-Text, #44413D);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+
+.location{
+    color: var(--secondary-text-icons, #76716D);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+.pickUp{
+    color: var(--secondary-text-icons, #76716D);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+.condition{
+    color: var(--secondary-text-icons, #76716D);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;}
+    
+.size{ 
+    color: var(--secondary-text-icons, #76716D);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;}
+
+.dimension{
+    color: var(--secondary-text-icons, #76716D);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;}
+
+.colour{
+    color: var(--secondary-text-icons, #76716D);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;}
+
+.buttonView{
+    display: flex;
+    width: 192px;
+    height: 50px;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #007ACD;
+    color: white;
+}
+.buttonView:hover {
+    background-color: #1b74af;
+    color: white;
+}
