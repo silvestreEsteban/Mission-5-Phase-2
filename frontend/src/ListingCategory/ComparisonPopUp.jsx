@@ -52,7 +52,9 @@ function ComparisonPopUp() {
       {/* popup button */}
 
       <div className={styles.showingResult}>
-        <div className={styles.resulttext}>Showing 1,134 results for “sofa beds”</div>
+        <div className={styles.resulttext}>
+          Showing 1,134 results for “sofa beds”
+        </div>
         <button
           onClick={handleClickOpen}
           className={styles.compareListingButton}
@@ -73,44 +75,35 @@ function ComparisonPopUp() {
         </div>
         {popUp ? (
           <div>
-             {/* popup */}
+            {/* popup */}
             <div>
               <div className={styles.popUp}>
-                
-              <button className={styles.plusButton} onClick={handleClickPlus}>
-                   
-                 
-                   {plusPop?
-                   <img src="./Image/icons/Vector.svg"/>:
-                   <img src="./Image/icons/AddButton.png"/>
-}
-                 </button>
+                <button className={styles.plusButton} onClick={handleClickPlus}>
+                  {plusPop ? (
+                    <img src="./Image/icons/Vector.svg" />
+                  ) : (
+                    <img src="./Image/icons/AddButton.png" />
+                  )}
+                </button>
                 <div>
-                  {plusPop?
-                  <div className={styles.popUpPlus}>
-                  
-                  <div className={styles.compareListingOuter}>
-                    <div className={styles.compareListing}> 
-                      <img src="./Image/icons/Compare.svg"/>
-                       Compare all listings</div>
-                       
-                       </div>
-                  <div className={styles.comparisonDetails}>
-                      {productList.map((item, index) => (
-                    <ComparisonDetails  key={index} item={item} />
-                  ))}
-                     
-                     
-                     </div>
-
-                  </div>
-                 
-                  :""
-
-                  }
-                
-
-                  </div>
+                  {plusPop ? (
+                    <div className={styles.popUpPlus}>
+                      <div className={styles.compareListingOuter}>
+                        <div className={styles.compareListing}>
+                          <img src="./Image/icons/Compare.svg" />
+                          Compare all listings
+                        </div>
+                      </div>
+                      <div className={styles.comparisonDetails}>
+                        {productList.map((item, index) => (
+                          <ComparisonDetails key={index} item={item} />
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
                 <div className={styles.displayImage}>
                   {productList.map((item, index) => (
                     <ComparisonImage key={index} item={item} />
@@ -130,7 +123,6 @@ function ComparisonPopUp() {
                     </svg>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -138,12 +130,30 @@ function ComparisonPopUp() {
           ""
         )}
       </div>
+    
       <div className={styles.backToTopOuter}>
-<div className={styles.backToTop}>1 2 3 4 5 6 ....21 Next
-
-</div>
-                </div>
-    </div>
+        <div className={styles.backToTop}>
+          1 2 3 4 5 6 7.......21 Next
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+            >
+              <path
+                d="M15.4829 7.69121C15.4126 7.75362 15.3292 7.80313 15.2374 7.83691C15.1456 7.87069 15.0471 7.88807 14.9477 7.88807C14.8484 7.88807 14.7499 7.87069 14.6581 7.83691C14.5663 7.80313 14.4829 7.75362 14.4126 7.69121L8.89704 2.79553V15.9421C8.89704 16.1202 8.81736 16.2909 8.67552 16.4168C8.53368 16.5426 8.3413 16.6134 8.14071 16.6134C7.94011 16.6134 7.74773 16.5426 7.60589 16.4168C7.46405 16.2909 7.38437 16.1202 7.38437 15.9421V2.79553L1.86877 7.69121C1.72685 7.81716 1.53437 7.88792 1.33366 7.88792C1.13296 7.88792 0.940473 7.81716 0.798554 7.69121C0.656634 7.56527 0.576904 7.39444 0.576904 7.21633C0.576904 7.03821 0.656634 6.86739 0.798554 6.74144L7.6056 0.70049C7.67584 0.638083 7.75925 0.588575 7.85107 0.554796C7.94289 0.521018 8.04131 0.503632 8.14071 0.503632C8.2401 0.503632 8.33852 0.521018 8.43034 0.554796C8.52216 0.588575 8.60557 0.638083 8.67581 0.70049L15.4829 6.74144C15.5532 6.80378 15.609 6.87781 15.647 6.95929C15.6851 7.04078 15.7047 7.12812 15.7047 7.21633C15.7047 7.30454 15.6851 7.39188 15.647 7.47336C15.609 7.55485 15.5532 7.62888 15.4829 7.69121Z"
+                fill="#007ACD"
+              />
+            </svg>
+            Back to top
+          </div>
+        </div>
+      </div>
+      </div>
+     
+   
   );
 }
 
