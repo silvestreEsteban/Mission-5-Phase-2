@@ -47,7 +47,7 @@
     margin-top: 25px;
 }
 
-.Auction h3 {
+#BeenOutbid {
     color: var(--marketplace);
     margin-top: -10px;
     text-align: center;
@@ -57,6 +57,19 @@
     font-weight: 700;
     line-height: 150%;
 }
+
+#LeadingTheBid {
+    color: var(--primary-text-and-icons-color);
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+}
+
 
 .Auction p {
     margin-right: 25px;
@@ -451,4 +464,87 @@
     margin-left: 24px;
 }
 
-@media screen and (max-width: 431px) {}
+@media screen and (max-width: 431px) {
+
+    #BiddingProcessShowOnClick {
+        width: 376px;
+        height: 368px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -999px;
+        z-index: 100;
+        background-color: var(--txt-and-bg-box-site-bg-color);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #BiddingProcessColumn0 h2 {
+        margin-left: -50px;
+        color: var(--header-text-color);
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    #BiddingProcessColumn1 input {
+        height: 30px;
+        width: 200px;
+        margin-top: 20px;
+
+    }
+
+    #BiddingProcessColumn2 p {
+        color: var(--secondary-text-and-icons-color);
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 223%;
+        width: 301px;
+        height: 93px;
+    }
+
+    #BiddingProcessColumn3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 30px;
+        margin-top: -20px;
+    }
+
+    #BiddingProcessColumn3 label {
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--secondary-text-and-icons-color);
+        margin-left: 10px;
+    }
+
+    #BiddingProcessColumn4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    #BiddingProcessColumn4 button {
+        display: flex;
+        width: 105px;
+        height: 51px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .PurchasingContentDiv {
+        margin-top: -100px;
+    }
+}

@@ -24,6 +24,7 @@
 
 
 
+
 .NavbarTopDiv {
     height: 82px;
     background-color: var(--txt-and-bg-box-bg-color);
@@ -46,6 +47,14 @@
     text-decoration: underline;
 }
 
+.NavbarBottomDiv a {
+    text-decoration: none;
+    color: var(--primary-text-and-icons-color);
+}
+
+.NavbarBottomDiv a:hover {
+    text-decoration: underline;
+}
 
 .TopContainerLeft {
     height: 24px;
@@ -95,6 +104,10 @@
 
 .BottomContainerRight p {
     cursor: pointer;
+}
+
+.ComparePageIcon p {
+    color: var( --secondary-text-and-icons-color);
 }
 
 .BottomContainerLeft {

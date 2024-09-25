@@ -25,16 +25,16 @@
     --Hyperlink: #007ACD;
 }
 
-@media (min-width:431px) {
+@media (min-width:430px) {
 
     .FootContainer {
         /* position: fixed; */
         max-width: 1440px;
         width: 100vw;
         height: 488px;
-        margin-bottom: 1vh;
+        margin-bottom: 0vh;
         /* Change this in yours */
-        padding-bottom: 1vh;
+        padding-bottom: 0vh;
         position: relative;
         font-family: Helvetica;
     }
@@ -166,8 +166,9 @@
         color: var(--secondary-text-and-icons-color);
         justify-content: space-between;
         font-size: 16px;
-        /* margin-top: 21.4vh; */
-        margin-bottom: 1vh;
+        padding-top: 1.5vh;
+        margin-top: 18vh;
+        margin-bottom: 0vh;
         padding-bottom: 2vh;
     }
 
@@ -264,14 +265,7 @@
 }
 
 @media (max-width:430px) {
-    /* .NoGood {        
-        width: 430px;
-        height: 200px;
-        margin-bottom: 1vw;
-        background-image: url("FailSafeForDisplay.jpg");
-    }
-    .FootContainer{ display: none;}
-} */
+
 
     /* ************ Order Change ********************** */
     .AboveLine {
@@ -327,13 +321,15 @@
     }
 
     .FootContainer {
-        height: 200px;
-        position: relative;
+        margin-left: -1vw;
+        max-width: 100vw;
+        max-height: 200px;
         display: flex;
         flex-direction: column;
         font-size: 12px;
         justify-content: center;
-        margin-left: ;
+        margin-top: 800px;
+        font-family: Helvetica;
     }
 
     .FootContainer p {
@@ -348,10 +344,12 @@
         margin-top: 15%;
         max-width: 100vw;
         height: 17px;
+        margin-left: -5vw;
     }
 
     .InfoFeedback {
         height: 30px;
+        margin-left: -8vw;
     }
 
     .LineBreak {
@@ -375,23 +373,23 @@
     }
 
     .FinalFootExtraLinks2 {
-        margin-top: 1vw;
+        margin-top: -4vh;
         display: flex;
         flex-direction: row;
         width: 415px;
         height: 20px;
         justify-content: space-evenly;
         font-size: 12px;
-        margin-bottom: -1vh
+        margin-bottom: 3vh;
     }
 
     .FinalFootIcons {
-        margin-top: 10%;
+        /* margin-top: 1vh; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        margin-bottom: 2vh;
     }
 
     .FinalFootIcons svg {
@@ -418,7 +416,7 @@
         flex-direction: row;
         margin-left: 10px;
         margin-top: -3vh;
-        margin-bottom: -60vh;
+        margin-bottom: 6vh;
     }
 
     .MobileLinks p {

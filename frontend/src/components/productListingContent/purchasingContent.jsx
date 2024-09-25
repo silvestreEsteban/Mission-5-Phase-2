@@ -1,5 +1,6 @@
 import styles from './purchasingContent.module.css';
-import { auctionSVG, clockSVG, infoSVG, userIconSVG, starIconSVG, warningSVG } from './productListingSVG';
+// import { auctionSVG, clockSVG, infoSVG, userIconSVG, starIconSVG, warningSVG } from './productListingSVG';
+import { auctionSVG, clockSVG, infoSVG, userIconSVG, starIconSVG, warningSVG } from '../productListingContent/productListingSVG';
 import pickleRick from '../../images/pickle-rick.png';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
@@ -16,6 +17,12 @@ const [biddingBoxId, setBiddingBoxId] = useState('BiddingProcessHiddenDiv');
 const [bidAmount, setBidAmount] = useState('');
 const [itemId, setItemId] = useState('');
 const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+const [beenOutbid, setBeenOutbid] = useState({
+    id: 'BeenOutbid',
+    message: 'You have been outbid'
+});
+const [biddingButton, setBiddingButton] = useState('Place a bid');
+
 
 const handleCheckBoxChange = (e) => {
     setIsCheckboxChecked(e.target.checked);
@@ -26,7 +33,7 @@ const updateBiddingPrice = async (id, newPrice) => {
     try {
         console.log("Updating bidding price with ID:", id, "and new price:", newPrice);
         const response = await axios.post(
-            "http://localhost:4000/api/updateBiddingPrice",
+            "http://localhost:3000/api/updateBiddingPrice",
             { id, newPrice },
             {
                 headers: {
@@ -48,7 +55,7 @@ const updateBiddingPrice = async (id, newPrice) => {
 
 const fetchUserInfo = async () => {
     try {
-        const response = await axios.get("http://localhost:4000/api/userInfo");
+        const response = await axios.get("http://localhost:3000/api/userInfo");
         setLocation(response.data[0].location);
         setFeedback(response.data[0].feedback);
     } catch (error) {
@@ -58,7 +65,7 @@ const fetchUserInfo = async () => {
 
 const fetchBiddingPrice = async () => {
     try {
-        const response = await axios.get("http://localhost:4000/api/listingInfo");
+        const response = await axios.get("http://localhost:3000/api/listingInfo");
         setPrice(response.data[0].price);
         setItemId(response.data[0]._id);
         
@@ -101,10 +108,10 @@ const handleUpdatePrice = () => {
                 <div className={styles.Auction}>
                     <h2>{auctionSVG()} Auction</h2>
                     <h2 id={styles.TimeHeader}>{clockSVG()} 05:06:20</h2>
-                    <h3>You have been outbid</h3>
+                    <h3 id={styles[beenOutbid.id]}>{beenOutbid.message}</h3>
                     <span id={styles.BiddingPriceSpan}><h1>${price}</h1><h4>NZD<span id={styles.infoSVG}>{infoSVG()}</span></h4></span>
                     <p>Highest Bid</p>
-                    <button onClick={handleBiddingProcess}>Place a bid</button>
+                    <button onClick={handleBiddingProcess}>{biddingButton}</button>
                     <p id={styles.AuctionReserveP}>Reserve met</p>
                     <p id={styles.AuctionBidsHistoryP}>7 bids so far - view history</p>
                 </div>
@@ -137,6 +144,8 @@ const handleUpdatePrice = () => {
             if (isCheckboxChecked) {
                 handleUpdatePrice(itemId, bidAmount);
                 setBiddingBoxId('BiddingProcessHiddenDiv');
+                setBeenOutbid({ id: 'LeadingTheBid', message: 'Congratulations! You lead the bid'})
+                setBiddingButton('Edit bid');
             } else {
                 alert('Please check the box before confirming your bid');
             }

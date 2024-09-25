@@ -1,0 +1,617 @@
+:root {
+    --brand-primary-color1: #f9af2c;
+    --brand-primary-color2: #ffc041;
+    --brand-secondary-hyperlink: #007acd;
+    --ui-button-color-1: #00569e;
+    --ui-button-color-2: #006ebd;
+    --ui-button-color-3: #279be9;
+    --watchlist-accent-color: #943900;
+    --watchlist-card-bg-color: #fffae5;
+    --txt-and-bg-box-bg-color: #f6f5f4;
+    --txt-and-bg-box-site-bg-color: #ffffff;
+    --header-text-color: #44413d;
+    --primary-text-and-icons-color: #595959;
+    --secondary-text-and-icons-color: #76716d;
+    --box-highlight-color: #85807c;
+    --success-txt-icon-button-color: #29a754;
+    --success-message-box-color: #cbf3dc;
+    --marketplace: #d93a3f;
+    --jobs: #f3632d;
+    --motors: #5f6f88;
+    --property: #29a754;
+    --services: #555;
+
+    --community: #007ACD;
+    --Hyperlink: #007ACD;
+}
+.EmptyPageContainer{
+    font-family: Helvetica;
+}
+
+@media (min-width:430px) {
+
+
+.EmptyListingSpace{
+    order: 1000;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    max-width: 1096px;
+    height: 286px;
+    margin-top: 15vh;
+    margin-left: 10%;
+    margin-bottom: 14vh;
+    flex-shrink: 0;
+    border: 4px solid var( --secondary-text-and-icons-color);
+    background:var( --txt-and-bg-box-bg-color);
+
+}
+
+.BeforeLoadImageSpace{
+    margin-top: -0.2%;
+    width: 333px;
+    height: 286px;
+    /* padding-left: 1%; */
+    flex-shrink: 0;
+    border: 2px solid var( --secondary-text-and-icons-color);
+    background: var( --txt-and-bg-box-bg-color);
+}
+.BeforeLoadImageSpace img {
+    padding-top: 35%;
+    padding-left: 43%;
+}
+
+.AddListing {
+    padding-top: 10%;
+    padding-left: 25%;
+}
+.AddListing h3 {
+    color:var(--secondary-text-and-icons-color);
+    text-decoration: underline;
+}
+
+.EmptyListing {margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    max-width: 1096px;
+    height: 286px;
+    margin-left: 10%;
+    margin-bottom: 3vh;
+    flex-shrink: 0;
+    border: 4px solid var(--Primary-Colour, #F9AF2C);
+    background: #FFFAE5;
+}
+
+
+.EmptyListing p {
+    color: var(--secondary-text-and-icons-color);
+}
+
+.EmptyListing h2 {
+    padding: 2%;
+position:relative;
+align-content: left;
+}
+
+.Remove {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 22px;
+    height: 15px; */
+    margin-top: -30vh;
+    margin-right: .5vw;
+}
+.Remove button {
+    background-color: #F9AF2C;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* align-content: center; */
+    font-size: 12px;
+}
+.Remove strong {
+    color: #ffffff;
+}
+.Remove p {
+    margin-left: 1vw;
+}
+
+.EmptyImageSpace {
+    margin-top: -0.1%;
+    max-width: 333px;
+    max-height: 285px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px 3px 0px 5px;
+    border: 2px solid #FFC041;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.EmptyImageSpace svg {
+    position: absolute;
+    top: -33px;
+    left: 272px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
+.EmptyImageSpace img {
+    width: 100%;
+    height: 100%;
+}
+
+.ImageSpaceButton2 {
+    display: none;
+}
+
+.ImageSpaceButton strong {
+
+    font-size: 18px;
+    color: white;
+}
+
+.ImageSpaceButton {
+    border: none;
+    position: absolute;
+    top: 215px;
+    left: 93px;    ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+
+.ImageSpaceButton button {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    padding: 12px 19px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Button-Colour-2, #006EBD);
+}
+
+.WatchListIcon svg {
+    position: absolute;
+    top: -33px;
+    left: 272px;                  ;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1 img {
+    width: 32px;
+    height: 29px;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+.Scroll2 img {
+    width: 29px;
+    height: 29px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.Scroll2 {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.Scroll1{
+    position: absolute;
+    top: 130px;
+    right: -70px;
+    width: 30%;
+    height: auto;
+    opacity: 1;
+}
+.EmptyInfo {
+    margin-top: 20%;
+    font-size: 14px;
+}
+
+.EmptyListing strong {
+    color: var(--header-text-color)
+}
+.EmptyDescription p {
+    color: var(--secondary-text-and-icons-color);
+}
+
+.EmptyDetails {
+    margin-top: -0.2%;
+    width: 203px;
+    height: 286px;
+    padding-left: 1%;
+    flex-shrink: 0;
+    border: 2px solid #FFC041;
+    background: #FFFAE5;
+}
+
+.EmptyDescInfo {
+    margin-top: 5%;
+}
+
+.bidPrice {
+    display: flex;
+    flex-direction: row;
+}
+.EmptyOuterDesc{
+    width: 500px;
+    margin-top: 4vh;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+.EmptyDescription {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0%;
+    padding-left: 3%;
+}
+
+.EmptyShipAndPay {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+     align-content: center;
+   margin-top: 2vh;
+}
+
+
+.EmptyShipping{
+    margin-bottom: -15px;
+    margin-left: -1vw;
+
+}
+
+.EmptyPayment{
+    margin-left: -0.8vw;
+}
+
+.EmptyShipping,
+.EmptyPickup,
+.EmptyPayment { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    white-space: wrap;
+    word-break: break-all
+}
+.EmptyPickup {
+    display: flex;
+    flex-direction: row;
+    color: var( --property);
+}
+
+.EmptyPickup,
+.EmptyPayment p {
+    color: var( --property);
+}
+
+}
+/* @media (max-width:890px){
+    .listing{
+        display:flex;
+        flex-direction: column;
+        max-width: 331px;
+        height: 691px;
+        margin-left: 10%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: 4px solid var(--Primary-Colour, #F9AF2C);
+        background: #FFFAE5;
+    }
+} */
+
+@media (max-width: 1340px){
+    .EmptyListingSpace{
+        order: 1000;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        max-width: 796px;
+        height: 286px;
+        margin-left: 7%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: 4px solid var( --secondary-text-and-icons-color);
+        background:var( --txt-and-bg-box-bg-color);
+    
+    }
+
+
+    .EmptyListing {
+        display: flex;
+        flex-direction: row;
+        max-width: 796px;
+        height: 286px;
+        margin-left: 7%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: 4px solid var(--Primary-Colour, #F9AF2C);
+        background: #FFFAE5;
+    }
+    
+    
+    .EmptyListing p {
+        color: var(--secondary-text-and-icons-color);
+    }
+    
+    /* .listing h2 {
+        padding: 2%;
+    position:relative;
+    align-content: left;
+    } */
+    
+    .EmptyImageSpace {
+        margin-top: -0.1%;
+        max-width: 233px;
+        max-height: 285px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px 3px 0px 5px;
+        border: 2px solid #FFC041;
+        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    }
+    
+    
+    .EmptyImageSpace img {
+        margin-top: 25%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ImageSpaceButton2 {
+        display: none;
+    }
+    
+    .ImageSpaceButton strong {
+    
+        font-size: 18px;
+        color: white;
+    }
+    
+    .ImageSpaceButton {
+        border: none;
+        position: absolute;
+        top: 215px;
+        left: 93px;    ;
+        width: 30%;
+        height: auto;
+        opacity: 1;
+    }
+    
+    .ImageSpaceButton button {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        padding: 12px 19px;
+        /* justify-content: center; */
+        align-items: center;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--Button-Colour-2, #006EBD);
+    }
+
+    .BeforeLoadImageSpace{
+        margin-top: -0.2%;
+        width: 273px;
+        height: 286px;
+        padding-left: 1%;
+        flex-shrink: 0;
+        border: 2px solid var( --secondary-text-and-icons-color);
+        background: var( --txt-and-bg-box-bg-color);
+    }
+    .BeforeLoadImageSpace img {
+        padding-top: 35%;
+        padding-left: 40%;
+    }
+    .BeforeLoadImageSpace img {
+        padding-top: 43%;
+        padding-left: 40%;
+    }
+    .AddListing {
+        padding-top: 14%;
+        padding-left: 18%;
+    }
+    
+}
+
+@media (max-width:430px) {
+    .EmptyPageContainer{
+        background-color: #FFFAE5;
+        font-size: 1em;
+        width: 100vw;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+/*  8888888888888888888888888888888888888888888888888888888888888888888 */
+    .ExtraPageContainer {
+        margin-top: -13vh;
+        /* padding-top: 17px; */
+        background-color: #FFFAE5; 
+    }
+    .Remove {
+        display: none;
+    }
+
+    .EmptyListing{
+        display:flex;
+        flex-direction: column;
+        max-width: 331px;
+        height: 691px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        margin-left: 10%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: none;
+        box-shadow: 0 0 3px 0   var(--box-highlight-color);
+        background: var( --txt-and-bg-box-site-bg-color);
+    }
+    .EmptyImageSpace {
+        margin-top: -0.1%;
+        max-width: 331px;
+        max-height: 285px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px 3px 0px 5px;
+        border: none;
+        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    } 
+    
+    .EmptyImageSpace img {
+        margin-top: 0%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ImageSpaceButton {
+        display: none;
+
+    }
+
+    .ImageSpaceButton2 strong {
+        color: white;
+    }
+
+    .ImageSpaceButton2 button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;      
+        width: 150px;
+        padding: 12px 19px;
+        margin-left: 42px;
+        background-color: var(--Button-Colour-2, #006EBD);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .EmptyDetails {
+        margin-top: -5vh;
+        width: 331px;
+        height: 286px;
+        padding-left: 5vw;
+        flex-shrink: 0;
+        border: none;
+        background:none;
+        margin-bottom: -3vh;
+    } 
+    .EmptyListingSpace{
+        order: 1000;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        max-width: 331px;
+        height: 691px;
+        margin-top: 6vh;
+        margin-left: 10.5%;
+        margin-bottom: 3vh;
+        flex-shrink: 0;
+        border: none;
+        background:var( --txt-and-bg-box-bg-color);
+    
+    }
+    .EmptyOuterDesc{
+        width: 331px;
+        margin-left: -5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .EmptyDescription {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0%;
+        padding-left: 1%;
+        margin-left: 3vw;
+    }
+
+ 
+    .EmptyDescInfo{
+        font-size: 12px;
+        width: 331;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        margin-left: 2vw;
+        margin-bottom: 2vh;
+    }
+    .EmptySizeCond{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vw;
+    }
+    .EmptyDimeCol{
+        display: flex;
+        flex-direction: column;
+        margin-left: 13vw;
+    }
+    .EmptyShipAndPay {
+        display: flex;
+        flex-direction: column;
+        margin-top: -3vh;
+        margin-left: 3vw;
+        align-content: center;
+    }
+
+    .EmptyShipAndPay p {
+        word-wrap: break-word;
+        /* margin-left: 5vw; */
+    }
+    
+    .EmptyShipping{
+        align-items: center;
+        margin-left: 0vw;    
+    }
+
+    .EmptyPickup p{
+        align-items: center;
+        padding-bottom: -5vh;
+        margin-left: 3vw;
+    }
+    
+    .EmptyPayment{
+        align-items: center;
+        margin-top: -0.5vh;
+        margin-left: 0vw;
+    }
+
+
+
+    .BeforeLoadImageSpace{
+        margin-top: -0.2%;
+        width: 329px;
+        height: 286px;
+        margin-left: -0.2%;
+        padding-left: 0%;
+        flex-shrink: 0;
+        border: none;
+        background-color: var( --txt-and-bg-box-bg-color);
+        margin-bottom: -10vh;
+    }
+    .BeforeLoadImageSpace img {
+        padding-top: 35%;
+        padding-left: 43%;
+    }
+    
+    .AddListing {
+        padding-top: 10%;
+        padding-left: 15%;
+    }
+
+}
