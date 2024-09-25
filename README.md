@@ -7,4 +7,4 @@
 <h3>For the devs working on this project:</h3>
 <ol>When cloning the repository, navigate in to the backend folder and then run the npm install command in your shell.</ol>
 <ol>After you have completed this, run the npm link command, and then write listing --help to get a full list of the CLI commands available to you.</ol>
-<ol>To seed the mongoDB database, run 'listing seed' and 'listing seedCarousel' this will populate the two collections with the necessary data for the listings in the project workload.</ol>
+<ol>To seed the mongoDB database, run 'listing seed | s', listing seedUser | su  and 'listing seedCarousel | sc' this will populate the three collections with the necessary data for the listings in the project workload.</ol>

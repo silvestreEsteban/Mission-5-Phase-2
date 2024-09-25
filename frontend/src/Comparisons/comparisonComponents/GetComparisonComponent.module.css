@@ -24,19 +24,21 @@
     --community: #007ACD;
     --Hyperlink: #007ACD;
 }
-*{
-    font-family: Helvetica;    
+
+* {
+    font-family: Helvetica;
 }
 
 /* @media (min-width:430px) { */
 
-    /* This page container only contains the listings field */
-.PageContainer {  
+/* This page container only contains the listings field */
+.PageContainer {
     margin-top: 15vh;
-    margin-bottom: 15vh;;
+    margin-bottom: 15vh;
+    ;
 }
 
-.SpaceContainer{
+.SpaceContainer {
     max-width: 1440px;
     height: 30vh;
     display: flex;
@@ -45,7 +47,7 @@
     align-items: center;
 }
 
-.SpaceContainer h1{
+.SpaceContainer h1 {
     margin-top: 10vh;
     margin-left: 30%;
     margin-bottom: 8vh;
@@ -54,16 +56,17 @@
 
 .SpaceContainer p {
     font-family: Helvetica;
-font-size: 16px;
-    color: var( --secondary-text-and-icons-color);
+    font-size: 16px;
+    color: var(--secondary-text-and-icons-color);
 }
 
 .ReturnButton {
     margin-top: 30px;
-    padding: 1px 70px;    
+    padding: 1px 70px;
     border-radius: 5px;
     background-color: var(--ui-button-color-2);
 }
+
 .ReturnButton h2 {
     color: var(--txt-and-bg-box-site-bg-color);
 }
@@ -81,9 +84,11 @@ font-size: 16px;
     background: #FFFAE5;
     font-size: 14px;
 }
+
 .listing p {
     color: var(--secondary-text-and-icons-color);
 }
+
 .Remove {
     display: flex;
     flex-direction: row;
@@ -91,6 +96,7 @@ font-size: 16px;
     margin-top: -30vh;
     margin-right: .5vw;
 }
+
 .Remove button {
     background-color: #F9AF2C;
     border: none;
@@ -100,16 +106,19 @@ font-size: 16px;
     /* align-content: center; */
     font-size: 12px;
 }
+
 .Remove strong {
     color: #ffffff;
 }
+
 .Remove p {
     margin-left: 1vw;
 }
+
 .listing h2 {
     padding: 2%;
-position:relative;
-align-content: left;
+    position: relative;
+    align-content: left;
 }
 
 .ImageSpace {
@@ -129,22 +138,25 @@ align-content: left;
     max-width: 100%;
     max-height: 100%;
 }
+
 .ImageSpaceButton2 {
     display: none;
 }
-.ImageSpaceButton strong{
+
+.ImageSpaceButton strong {
     display: flex;
     flex-direction: row;
     text-align: center;
     font-size: 18px;
-    color: var( --txt-and-bg-box-site-bg-color);
+    color: var(--txt-and-bg-box-site-bg-color);
 }
 
 .ImageSpaceButton {
     border: none;
     position: absolute;
     top: 215px;
-    left: 93px;                  ;
+    left: 93px;
+    ;
     width: 30%;
     height: auto;
     opacity: 1;
@@ -160,18 +172,21 @@ align-content: left;
     border-radius: 5px;
     background-color: var(--Button-Colour-2, #006EBD);
 }
+
 .WatchListIcon svg {
     position: absolute;
     top: -33px;
-    left: 266px;                  ;
+    left: 266px;
+    ;
     width: 30%;
     height: auto;
     opacity: 1;
 }
+
 .Scroll1 img {
     width: 29px;
     height: 29px;
-    border-radius: 10px 0px 0px 10px; 
+    border-radius: 10px 0px 0px 10px;
 }
 
 .Scroll2 img {
@@ -187,9 +202,10 @@ align-content: left;
     width: 30%;
     height: auto;
     opacity: 1;
-    
+
 }
-.Scroll1{
+
+.Scroll1 {
     position: absolute;
     top: 130px;
     right: -71px;
@@ -207,8 +223,9 @@ align-content: left;
 .listing strong {
     color: var(--header-text-color)
 }
+
 .Description p {
-    color: var( --secondary-text-and-icons-color);
+    color: var(--secondary-text-and-icons-color);
 }
 
 .Details {
@@ -230,7 +247,8 @@ align-content: left;
     display: flex;
     flex-direction: row;
 }
-.OuterDesc{
+
+.OuterDesc {
     width: 500px;
     margin-top: 4vh;
     margin-left: 2%;
@@ -239,6 +257,7 @@ align-content: left;
     align-items: center;
     font-size: 14px;
 }
+
 .Description {
     display: flex;
     flex-direction: row;
@@ -253,18 +272,19 @@ align-content: left;
     margin-top: 2vh;
     align-content: center;
 }
-.shipping{
+
+.shipping {
     margin-bottom: -15px;
     margin-left: -1vw;
 }
 
-.payment{
+.payment {
     margin-left: -0.8vw;
 }
 
 .shipping,
 .pickup,
-.payment { 
+.payment {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -272,21 +292,22 @@ align-content: left;
     white-space: wrap;
     word-break: break-all;
 }
+
 .pickup {
     display: flex;
     flex-direction: row;
-    color: var( --property);
+    color: var(--property);
 }
 
 .pickup,
 .payment p {
-    color: var( --property);
+    color: var(--property);
 }
 
 /* } */
-@media (max-width:890px){
-    .listing{
-        display:flex;
+@media (max-width:890px) {
+    .listing {
+        display: flex;
         flex-direction: column;
         max-width: 331px;
         height: 691px;
@@ -299,7 +320,7 @@ align-content: left;
 
 }
 
-@media (max-width: 1340px){
+@media (max-width: 1340px) {
     .listing {
         order: +1;
         display: flex;
@@ -313,16 +334,17 @@ align-content: left;
         background: #FFFAE5;
         font-size: 14px;
     }
+
     .listing p {
         color: var(--secondary-text-and-icons-color);
     }
-    
+
     /* .listing h2 {
         padding: 2%;
     position:relative;
     align-content: left;
     } */
-    
+
     .ImageSpace {
         margin-top: -0.1%;
         max-width: 233px;
@@ -333,8 +355,8 @@ align-content: left;
         border-radius: 5px 3px 0px 5px;
         border: 2px solid #FFC041;
         background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-    } 
-    
+    }
+
     .ImageSpace img {
         margin-top: 25%;
         max-width: 100%;
@@ -344,65 +366,69 @@ align-content: left;
 
 @media (max-width:430px) {
     .ExtraPageContainer {
-        background-color: #FFFAE5; 
+        background-color: #FFFAE5;
     }
-    
-    .PageContainer{
-    background-color: #FFFAE5;
-    font-size: 1em;
-    width: 100vw;
-    margin-left: 0vw;
-    padding-top: 17px;
-    padding-bottom: 17px;
-}
-.SpaceContainer{
-    max-width: 1440px;
-    height: 20vh;
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
 
-.SpaceContainer h1{
-    font-size: 1.25em;
-    margin-top: 8vh;
-    margin-left: 30%;
-}
+    .PageContainer {
+        background-color: #FFFAE5;
+        font-size: 1em;
+        width: 100vw;
+        margin-left: 0vw;
+        padding-top: 17px;
+        padding-bottom: 17px;
 
-.SpaceContainer p {
-    color: var( --secondary-text-and-icons-color);
-    text-align: center;
-    order: 5;
-}
+    }
 
-.ReturnButton {
-    order: 4;
-    margin-top: 1vh;
-    padding: 1px 50px;    
-    border-radius: 5px;
-    background-color: var(--ui-button-color-2);
-}
-.ReturnButton h2 {
-    font-size: 1em;
-    
-}
-
-    .listing{
-        display:flex;
+    .SpaceContainer {
+        max-width: 1440px;
+        height: 20vh;
+        margin-top: 3vh;
+        display: flex;
         flex-direction: column;
-        box-shadow: 0 0 3px 0   var(--box-highlight-color);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .SpaceContainer h1 {
+        font-size: 1.25em;
+        margin-top: 8vh;
+        margin-left: 30%;
+    }
+
+    .SpaceContainer p {
+        color: var(--secondary-text-and-icons-color);
+        text-align: center;
+        order: 5;
+    }
+
+    .ReturnButton {
+        order: 4;
+        margin-top: 1vh;
+        padding: 1px 50px;
+        border-radius: 5px;
+        background-color: var(--ui-button-color-2);
+    }
+
+    .ReturnButton h2 {
+        font-size: 1em;
+
+    }
+
+    .listing {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 3px 0 var(--box-highlight-color);
         max-width: 331px;
         height: 741px;
         margin-top: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
         margin-left: 10.5%;
         margin-bottom: 3vh;
         flex-shrink: 0;
         border: none;
-        background: var( --txt-and-bg-box-site-bg-color);
+        background: var(--txt-and-bg-box-site-bg-color);
     }
+
     .ImageSpace {
         margin-top: -0.1%;
         max-width: 331px;
@@ -413,31 +439,45 @@ align-content: left;
         border-radius: 5px 3px 0px 5px;
         border: none;
         background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-    } 
+    }
 
     .Remove {
-        display: none;   margin-right: .5vw;
+        display: none;
+        margin-right: .5vw;
     }
+
     .ImageSpaceButton {
         display: none;
 
     }
-    .ImageSpaceButton2 {
+
+    .ImageSpaceButton2 strong {
+        color: white;
+    }
+
+    .ImageSpaceButton2 button {
         display: flex;
         flex-direction: row;
+        align-items: center;      
         width: 150px;
         padding: 12px 19px;
-        /* justify-content: center; */
-        align-items: center;
-        border-radius: 5px;
+        margin-left: 42px;
         background-color: var(--Button-Colour-2, #006EBD);
+        border: none;
+        border-radius: 5px;
     }
-    
+
+    .ImageSpaceButton2 {
+        
+  
+    }
+
     .ImageSpace img {
         margin-top: 0%;
         max-width: 100%;
         max-height: 100%;
     }
+
     .Details {
         margin-top: -5vh;
         width: 331px;
@@ -445,15 +485,17 @@ align-content: left;
         padding-left: 5vw;
         flex-shrink: 0;
         border: none;
-        background:none;
+        background: none;
         margin-bottom: -3vh;
-    }    
-    .OuterDesc{
+    }
+
+    .OuterDesc {
         width: 331px;
         margin-left: -5vw;
         display: flex;
         flex-direction: column;
     }
+
     .Description {
         display: flex;
         flex-direction: row;
@@ -461,8 +503,8 @@ align-content: left;
         padding-left: 1%;
     }
 
- 
-    .DescInfo{
+
+    .DescInfo {
         font-size: 12px;
         width: 331;
         display: flex;
@@ -473,16 +515,19 @@ align-content: left;
         margin-left: 2vw;
         margin-bottom: 2vh;
     }
-    .SizeCond{
+
+    .SizeCond {
         display: flex;
         flex-direction: column;
         margin-left: 2vw;
     }
-    .DimeCol{
+
+    .DimeCol {
         display: flex;
         flex-direction: column;
         margin-left: 13vw;
     }
+
     .ShipAndPay {
         display: flex;
         flex-direction: row;
@@ -493,25 +538,26 @@ align-content: left;
     .ShipAndPay p {
         word-wrap: break-word;
     }
-    
-    .shipping{
+
+    .shipping {
         align-items: center;
         padding-bottom: -1vh;
         margin-left: -3vw;
     }
-    .pickup{
+
+    .pickup {
         align-items: center;
         margin-bottom: -1vh;
     }
-    
-    .payment{
+
+    .payment {
         align-items: center;
-        margin-top: 1vh; 
+        margin-top: 1vh;
         margin-left: -3vw;
 
     }
 
 
-    
-   
+
+
 }
