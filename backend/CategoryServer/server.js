@@ -6,7 +6,7 @@ import productRouter from "../Router/productRouter.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.API_PORT
+const PORT = 4000
 
 app.use(cors());
 app.use(express.json());

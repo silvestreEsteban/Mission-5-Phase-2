@@ -19,7 +19,7 @@ function ComparisonPopUp() {
   useEffect(() => {
     // ===Fetching the Item list===//
     function fetchProductList() {
-      fetch("http://localhost:3000/api/getProductsForReserve")
+      fetch("http://localhost:4000/api/getProductsForReserve")
         .then((res) => res.json())
         .then((jsondata) => setProductList(jsondata));
       console.log(productList);
