@@ -421,7 +421,7 @@
         max-width: 331px;
         height: 741px;
         margin-top: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
         margin-left: 10.5%;
         margin-bottom: 3vh;
         flex-shrink: 0;
@@ -451,15 +451,25 @@
 
     }
 
-    .ImageSpaceButton2 {
+    .ImageSpaceButton2 strong {
+        color: white;
+    }
+
+    .ImageSpaceButton2 button {
         display: flex;
         flex-direction: row;
+        align-items: center;      
         width: 150px;
         padding: 12px 19px;
-        /* justify-content: center; */
-        align-items: center;
-        border-radius: 5px;
+        margin-left: 42px;
         background-color: var(--Button-Colour-2, #006EBD);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .ImageSpaceButton2 {
+        
+  
     }
 
     .ImageSpace img {

@@ -1,5 +1,6 @@
 import styles from './purchasingContent.module.css';
-import { auctionSVG, clockSVG, infoSVG, userIconSVG, starIconSVG, warningSVG } from './productListingSVG';
+// import { auctionSVG, clockSVG, infoSVG, userIconSVG, starIconSVG, warningSVG } from './productListingSVG';
+import { auctionSVG, clockSVG, infoSVG, userIconSVG, starIconSVG, warningSVG } from '../productListingContent/productListingSVG';
 import pickleRick from '../../images/pickle-rick.png';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
